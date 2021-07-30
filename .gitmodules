@@ -1,0 +1,3 @@
+[submodule "n-lx-polybar/polybar/custom/polybar-scripts"]
+	path = n-lx-polybar/polybar/custom/polybar-scripts
+	url = git@github.com:jazzsewera/polybar-scripts.git

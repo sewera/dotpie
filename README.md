@@ -1,3 +1,8 @@
+# Dotpie
+
+My personal dotfiles. If you plan to use polybar, clone with `--recursive`
+option.
+
 ## Prerequisites
 
 `stow`

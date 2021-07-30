@@ -1,0 +1,13 @@
+[Unit]
+Description=Wallsch - an advanced wallpaper scheduler
+
+[Service]
+Environment=DISPLAY=:0
+Type=simple
+ExecStart=/usr/bin/wallschd
+Restart=on-failure
+RestartSec=10
+KillMode=process
+
+[Install]
+WantedBy=graphical.target
