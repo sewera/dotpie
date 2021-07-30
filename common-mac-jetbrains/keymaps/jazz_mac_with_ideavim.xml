@@ -15,12 +15,6 @@
     <keyboard-shortcut first-keystroke="tab" />
   </action>
   <action id="EditorChooseLookupItemReplace" />
-  <action id="FindNext">
-    <keyboard-shortcut first-keystroke="n" />
-  </action>
-  <action id="FindPrevious">
-    <keyboard-shortcut first-keystroke="shift n" />
-  </action>
   <action id="GotoSymbol" />
   <action id="QuickChangeScheme" />
   <action id="RecentLocations" />
