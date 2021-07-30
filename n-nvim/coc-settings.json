@@ -1,0 +1,61 @@
+{
+  "codeLens.enable": true,
+  "emmet.includeLanguages": {
+    "htmldjango": "html",
+    "vue-html": "html",
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact"
+  },
+
+  "coc.preferences.formatOnSaveFiletypes": [
+    "rust",
+    "python",
+    "css",
+    "Markdown",
+    "json",
+    "jsonc",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+
+  "rust.clippy_preference": "on",
+
+  "eslint.autoFixOnSave": true,
+
+  "prettier.endOfLine": "lf",
+  "prettier.semi": true,
+  "prettier.useTabs": false,
+  "prettier.tabWidth": 2,
+  "prettier.printWidth": 80,
+  "prettier.singleQuote": true,
+
+  "python.pythonPath": "python3",
+  "python.jediEnabled": false,
+  "python.formatting.provider": "black",
+  "python.linting.flake8Enabled": false,
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Args": ["--ignore=E501"],
+
+  "python.analysis.useLibraryCodeForTypes": false,
+
+  "languageserver": {
+    "ccls": {
+      "command": "ccls",
+      "filetypes": ["c", "cpp", "objc", "objcpp"],
+      "rootPatterns": [
+        ".ccls",
+        "compile_commands.json",
+        ".vim/",
+        ".git/",
+        ".hg/"
+      ],
+      "initializationOptions": {
+        "cache": {
+          "directory": "/tmp/ccls"
+        }
+      }
+    }
+  }
+}

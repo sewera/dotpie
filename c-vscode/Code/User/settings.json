@@ -1,0 +1,197 @@
+{
+  // editing
+  // > font
+  "editor.fontFamily": "SauceCodePro Nerd Font",
+  "editor.fontSize": 15,
+
+  // > autocomplete
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": true,
+    "strings": true
+  },
+  "editor.acceptSuggestionOnCommitCharacter": true,
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.quickSuggestionsDelay": 10,
+  "editor.suggestOnTriggerCharacters": true,
+  "editor.tabCompletion": "on",
+  "editor.suggest.localityBonus": true,
+  "editor.suggestSelection": "first",
+  "editor.wordBasedSuggestions": true,
+
+  // > behavior and appearance
+  // > > theme
+  "workbench.colorTheme": "One Dark Pro",
+  // > > text, lines, and columns
+  "editor.tabSize": 2,
+  "editor.wordWrap": "off",
+  "editor.rulers": [78, 120, 150],
+  "editor.lineNumbers": "relative",
+  // > > docs
+  "editor.parameterHints.enabled": true,
+  // > > cursor
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.cursorBlinking": "solid",
+  "workbench.colorCustomizations": {
+    "editorCursor.foreground": "#78909c",
+    "editorCursor.background": "#192228",
+    "terminalCursor.foreground": "#78909c",
+    "terminalCursor.background": "#192228"
+  },
+  // > > automatic actions
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "files.insertFinalNewline": true,
+  // > > handling files
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "explorer.confirmDelete": false,
+  // > > terminal
+  "terminal.integrated.tabs.enabled": true,
+  // > > extensions
+  // > > > Installed extensions:
+  // > > > Vim, Markdown All in One, Material Icon Theme, One Dark Pro
+  // > > > Sublime Text Keymap and Settings Importer
+  "extensions.ignoreRecommendations": true,
+
+  // misc
+  "telemetry.enableTelemetry": false,
+
+  // git
+  "git.autofetch": true,
+  "git.autofetchPeriod": 300,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+
+  // vim (to be moved to vimrc)
+  "vim.useCtrlKeys": true,
+  "vim.ignorecase": false,
+  "vim.smartcase": false,
+  "vim.leader": " ",
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<leader>", "g", "p", "e"],
+      "commands": ["editor.action.marker.prev"]
+    },
+    {
+      "before": ["<leader>", "g", "n", "e"],
+      "commands": ["editor.action.marker.next"]
+    },
+    {
+      "before": ["<leader>", "g", "p", "w"],
+      "commands": ["editor.action.marker.prev"]
+    },
+    {
+      "before": ["<leader>", "g", "n", "w"],
+      "commands": ["editor.action.marker.next"]
+    },
+    {
+      "before": ["<leader>", "g", "d"],
+      "commands": ["editor.action.revealDefinition"]
+    },
+    {
+      "before": ["<leader>", "g", "D"],
+      "commands": ["editor.action.revealDeclaration"]
+    },
+    {
+      "before": ["<leader>", "g", "i"],
+      "commands": ["editor.action.goToImplementation"]
+    },
+    {
+      "before": ["<leader>", "g", "t"],
+      "commands": ["editor.action.goToTypeDefinition"]
+    },
+    {
+      "before": ["<leader>", "g", "r"],
+      "commands": ["editor.action.goToReferences"]
+    },
+    {
+      "before": ["<leader>", "R"],
+      "commands": ["editor.action.refactor"]
+    },
+    {
+      "before": ["<leader>", "f"],
+      "commands": ["editor.action.quickFix"]
+    },
+    {
+      "before": ["<leader>", "F"],
+      "commands": ["editor.action.autoFix"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["editor.action.showHover"]
+    },
+    {
+      "before": ["<leader>", "o"],
+      "commands": ["outline.focus"]
+    },
+    {
+      "before": ["<leader>", "c", "<space>"],
+      "commands": ["editor.action.commentLine"]
+    },
+    {
+      "before": ["<leader>", "c", "u"],
+      "commands": ["editor.action.removeCommentLine"]
+    },
+    {
+      "before": ["<leader>", "c", "c"],
+      "commands": ["editor.action.addCommentLine"]
+    },
+    {
+      "before": ["<leader>", "c", "b"],
+      "commands": ["editor.action.blockComment"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["<leader>", "c", "<space>"],
+      "commands": ["editor.action.commentline"]
+    },
+    {
+      "before": ["<leader>", "c", "u"],
+      "commands": ["editor.action.removeCommentLine"]
+    },
+    {
+      "before": ["<leader>", "c", "c"],
+      "commands": ["editor.action.addCommentLine"]
+    },
+    {
+      "before": ["<leader>", "c", "b"],
+      "commands": ["editor.action.blockComment"]
+    }
+  ],
+
+  // language-specific
+  // > frontend
+  // > > formatting
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // > > linting
+  "eslint.options": {},
+  "eslint.codeActionsOnSave.mode": "all",
+
+  // > python
+  "python.showStartPage": false,
+  "python.languageServer": "Pylance",
+  "python.formatting.provider": "black",
+  "python.defaultInterpreterPath": "python3",
+  "python.pythonPath": "/usr/local/bin/python3"
+}

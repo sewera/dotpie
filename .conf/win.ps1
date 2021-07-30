@@ -1,0 +1,1 @@
+$env:CONFDIR = $env:APPDATA

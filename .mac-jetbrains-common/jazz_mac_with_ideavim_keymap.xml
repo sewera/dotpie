@@ -1,0 +1,34 @@
+<keymap version="1" name="jazz_mac_with_ideavim" parent="Sublime Text (Mac OS X)">
+  <action id="ActivateCommitToolWindow">
+    <keyboard-shortcut first-keystroke="meta 0" />
+    <keyboard-shortcut first-keystroke="shift meta g" />
+  </action>
+  <action id="ActivateProjectToolWindow">
+    <keyboard-shortcut first-keystroke="meta 1" />
+    <keyboard-shortcut first-keystroke="shift meta e" />
+  </action>
+  <action id="ActivateTerminalToolWindow">
+    <keyboard-shortcut first-keystroke="alt f12" />
+    <keyboard-shortcut first-keystroke="ctrl back_quote" />
+  </action>
+  <action id="EditorChooseLookupItem">
+    <keyboard-shortcut first-keystroke="tab" />
+  </action>
+  <action id="EditorChooseLookupItemReplace" />
+  <action id="FindNext">
+    <keyboard-shortcut first-keystroke="n" />
+  </action>
+  <action id="FindPrevious">
+    <keyboard-shortcut first-keystroke="shift n" />
+  </action>
+  <action id="GotoSymbol" />
+  <action id="QuickChangeScheme" />
+  <action id="RecentLocations" />
+  <action id="ReplaceInPath">
+    <keyboard-shortcut first-keystroke="shift meta r" />
+  </action>
+  <action id="Terminal.SwitchFocusToEditor" />
+  <action id="ToggleBookmark">
+    <keyboard-shortcut first-keystroke="meta f2" />
+  </action>
+</keymap>
