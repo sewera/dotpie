@@ -1,0 +1,51 @@
+#!/bin/bash
+
+revert() {
+  xset dpms 0 0 0
+}
+
+trap revert HUP INT TERM
+
+xset dpms 3 3 3
+
+if [[ $1 == '-n' ]]; then
+  WP=$2
+  revert
+else
+  WP=$1
+fi
+
+insidecolor=00000000
+ringcolor=ffffffff
+keyhlcolor=d23c3dff
+bshlcolor=d23c3dff
+separatorcolor=00000000
+insidevercolor=00000000
+insidewrongcolor=d23c3dff
+ringvercolor=ffffffff
+ringwrongcolor=ffffffff
+verifcolor=ffffffff
+timecolor=ffffffff
+datecolor=ffffffff
+loginbox=00000066
+font="Suisse Int'l"
+font_time="Suisse Int'l Mono"
+locktext=$(date +%A),\ $(date --iso-8601=date)
+
+i3lock \
+  -n -i "$WP" \
+  -c "000000FF" \
+  --refresh-rate=0.2 \
+  --time-pos='x-2410:h+150' \
+  --date-pos='x-2480:h+175' \
+  --clock --date-align 1 --date-str "$locktext" \
+  --inside-color=$insidecolor --ring-color=$ringcolor --line-uses-inside \
+  --keyhl-color=$keyhlcolor --bshl-color=$bshlcolor --separator-color=$separatorcolor \
+  --insidever-color=$insidevercolor --insidewrong-color=$insidewrongcolor \
+  --ringver-color=$ringvercolor --ringwrong-color=$ringwrongcolor --ind-pos='x-2270:h+150' \
+  --radius=20 --ring-width=4 --verif-text='' --wrong-text='' \
+  --verif-color="$verifcolor" --time-color="$timecolor" --date-color="$datecolor" \
+  --time-font="$font_time" --date-font="$font" --layout-font="$font" --verif-font="$font" --wrong-font="$font" \
+  --noinput-text='' --force-clock $lockargs
+
+revert
