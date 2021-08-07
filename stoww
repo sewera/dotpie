@@ -1,0 +1,34 @@
+#!/usr/bin/env zsh
+## Stow wrapper
+
+if [ "$(uname)" = "Darwin" ]; then
+  C_CONFDIR="$HOME/Library/Application Support"
+  N_CONFDIR="$HOME/.config"
+  H_CONFDIR="$HOME"
+elif [ "$(expr substr $(uname -s) 1 5)" = "Linux" ]; then
+  C_CONFDIR="$HOME/.config"
+  N_CONFDIR="$HOME/.config"
+  H_CONFDIR="$HOME"
+fi
+
+stowargs="--ignore=\\.pre"
+
+for arg in "$@"; do
+  case "$arg" in
+    -*)
+      stowargs+=" $arg"
+      ;;
+    c-*)
+      echo "Stowing $arg to $C_CONFDIR"
+      stow $(echo $stowargs) -t "$C_CONFDIR" $arg
+      ;;
+    n-*)
+      echo "Stowing $arg to $N_CONFDIR"
+      stow $(echo $stowargs) -t "$N_CONFDIR" $arg
+      ;;
+    h-*)
+      echo "Stowing $arg to $H_CONFDIR"
+      stow $(echo $stowargs) -t "$H_CONFDIR" $arg
+      ;;
+  esac
+done

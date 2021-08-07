@@ -5,38 +5,27 @@ option.
 
 ## Prerequisites
 
-`stow`
+- `stow`
+- `zsh` for MacOS and Linux, although it may work with bash
 
 ## Usage
 
-First, source the `.conf/*` file, applicable to the system.
+Use the stow wrapper (`./stoww`), e.g.:
 
-e.g.:
 ```sh
-source .conf/mac.sh
+./stoww n-mac-alacritty h-zsh
 ```
 
-Then, stow the desired directories with option `-t $CONFDIR`, e.g.:
+if you want to pass some args to stow, do it before providing the directories:
+
 ```sh
-stow -t $CONFDIR c-vscode
+./stoww -n -R h-zsh
 ```
 
 Dirs starting with `c-` go to the system-specific config directory, so
 `%APPDATA%` for Windows, `~/.config` for Linux, and `~/Library/Application
 Support` for MacOS.
-```sh
-source .conf/mac.sh
-stow -t $CONFDIR c-vscode
-```
 
-Dirs starting with `n-` go to `~/.config` for Unix systems
-and `%APPDATA%` for Windows.
-```sh
-source .conf/nix.sh
-stow -t $CONFDIR n-nvim
-```
+Dirs starting with `n-` go to `~/.config` for Unix systems.
 
 Dirs starting with `h-` go to home directory.
-```sh
-stow -t $HOME h-ideavim
-```
