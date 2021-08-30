@@ -1,6 +1,0 @@
-! Rofi config file
-rofi.font: Semi Bold 11
-rofi.show-icons: false
-rofi.display-window: Window
-rofi.display-drun: Search
-rofi.theme: /home/jazz/.config/rofi/oxide.rasi
