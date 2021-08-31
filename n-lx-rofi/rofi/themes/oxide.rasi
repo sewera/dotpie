@@ -38,7 +38,7 @@
 element {
     border:  0;
     spacing: 0px;
-    padding: 7px 7px 0px 7px;
+    padding: 7px 7px 7px 7px;
 }
 element normal.normal {
     background-color: var(normal-background);
