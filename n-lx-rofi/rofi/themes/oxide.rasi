@@ -1,6 +1,7 @@
 /**
  * Oxide Color theme
  * Author: Diki Ananta <diki1aap@gmail.com>
+ * Modified by: Blazej Sewera <https://github.com/jazzsewera>
  * Repository: https://github.com/dikiaap/dotfiles
  * License: MIT
  **/
@@ -36,8 +37,8 @@
 }
 element {
     border:  0;
-    spacing: 4px;
-    padding: 1px;
+    spacing: 0px;
+    padding: 7px 7px 0px 7px;
 }
 element normal.normal {
     background-color: var(normal-background);
@@ -84,11 +85,12 @@ element-icon {
     background-color: rgba ( 0, 0, 0, 0 % );
     size:             21px;
     text-color:       inherit;
+    margin:           0 4px 0 0;
 }
 window {
     background-color: var(background);
     border:           0;
-    padding:          8;
+    padding:          8px;
 }
 mainbox {
     border:  0;
@@ -108,7 +110,7 @@ listview {
     border-color: var(separatorcolor);
     spacing:      2px;
     scrollbar:    true;
-    padding:      2px 0px 0px;
+    padding:      2px 0px 0px 0px;
 }
 scrollbar {
     width:        4px;
