@@ -16,7 +16,6 @@ plugins=(
   ng
   colored-man-pages
   cp
-  fzf
   history-substring-search
 )
 
