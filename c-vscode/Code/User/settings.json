@@ -193,5 +193,10 @@
   "python.languageServer": "Pylance",
   "python.formatting.provider": "black",
   "python.defaultInterpreterPath": "python3",
-  "python.pythonPath": "/usr/local/bin/python3"
+  "python.pythonPath": "/usr/local/bin/python3",
+  "update.mode": "none",
+  "update.showReleaseNotes": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "jest.jestCommandLine": "yarn test"
 }
