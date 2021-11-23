@@ -22,6 +22,14 @@
   // > behavior and appearance
   // > > theme
   "workbench.colorTheme": "One Dark Pro",
+  "workbench.colorCustomizations": {
+    "[One Dark Pro]": {
+      "editorCursor.foreground": "#78909c",
+      "editorCursor.background": "#192228",
+      "terminalCursor.foreground": "#78909c",
+      "terminalCursor.background": "#192228"
+    }
+  },
   // > > text, lines, and columns
   "editor.tabSize": 2,
   "editor.wordWrap": "off",
@@ -32,12 +40,6 @@
   // > > cursor
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.cursorBlinking": "solid",
-  "workbench.colorCustomizations": {
-    "editorCursor.foreground": "#78909c",
-    "editorCursor.background": "#192228",
-    "terminalCursor.foreground": "#78909c",
-    "terminalCursor.background": "#192228"
-  },
   // > > automatic actions
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
@@ -54,7 +56,9 @@
   "extensions.ignoreRecommendations": true,
 
   // misc
-  "telemetry.enableTelemetry": false,
+  "telemetry.telemetryLevel": "off",
+  "update.mode": "none",
+  "update.showReleaseNotes": true,
 
   // git
   "git.autofetch": true,
@@ -162,6 +166,9 @@
 
   // language-specific
   // > frontend
+  // > > imports
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
   // > > formatting
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -187,16 +194,25 @@
   // > > linting
   "eslint.options": {},
   "eslint.codeActionsOnSave.mode": "all",
+  // > > testing
+  "jest.jestCommandLine": "yarn test",
 
   // > python
-  "python.showStartPage": false,
   "python.languageServer": "Pylance",
   "python.formatting.provider": "black",
   "python.defaultInterpreterPath": "python3",
   "python.pythonPath": "/usr/local/bin/python3",
-  "update.mode": "none",
-  "update.showReleaseNotes": false,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "jest.jestCommandLine": "yarn test"
+
+  // > markdown
+  "rewrap.autoWrap.notification": "text",
+  "[markdown]": {
+    "editor.occurrencesHighlight": false,
+    "rewrap.autoWrap.enabled": true,
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    }
+  }
 }
