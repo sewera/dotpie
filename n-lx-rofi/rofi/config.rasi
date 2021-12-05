@@ -3,7 +3,7 @@ configuration {
     lines: 12;
     font: "Source Code Pro 12";
     show-icons: true;
-    theme: "oxide";
     display-window: "Window";
     display-drun: "Search";
 }
+@theme "oxide"
