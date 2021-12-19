@@ -23,7 +23,7 @@ exec --no-startup-id /usr/lib/kdeconnectd
 exec --no-startup-id kdeconnect-indicator
 exec --no-startup-id mopidy
 exec_always --no-startup-id /home/jazz/.config/polybar/launch.sh &
-# exec --no-startup-id mpDris2
+exec --no-startup-id mpDris2
 bindsym Print exec --no-startup-id spectacle
 bindsym $mod+Print exec --no-startup-id scrot -u '/home/jazz/Pictures/Screenshots/ss_%Y%m%d_%H%M%S.png'
 bindsym control+Print exec --no-startup-id scrot -m '/home/jazz/Pictures/Screenshots/ss_%Y%m%d_%H%M%S.png'

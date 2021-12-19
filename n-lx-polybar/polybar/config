@@ -83,7 +83,7 @@ font-3 = "NotoSans Nerd Font:pixelsize=16:antialias=true;1"
 
 modules-left = i3
 modules-center = title
-modules-right = mpd pulseaudio text-padding date
+modules-right = pulseaudio text-padding date
 
 tray-position = right
 tray-padding = 3
@@ -171,7 +171,7 @@ font-2 = "NotoSans Nerd Font:pixelsize=11:antialias=true;1"
 font-3 = "NotoSans Nerd Font:pixelsize=16:antialias=true;1"
 
 modules-left = i3
-modules-center = music mpd player-mpris-tail pulseaudio
+modules-center = player-mpris-tail pulseaudio
 modules-right = redshift xkeyboard eth updates date
 
 scroll-up = i3wm-wsprev
@@ -638,7 +638,7 @@ exec = ~/.config/polybar/custom/mpd.sh
 
 [module/player-mpris-tail]
 type = custom/script
-exec = ~/.config/polybar/custom/polybar-scripts/polybar-scripts/player-mpris-tail/player-mpris-tail.py -f ' {icon} {artist} — {title}' --icon-playing '契' --icon-paused '' --icon-stopped '栗' --icon-none 'ﭥ'
+exec = ~/.config/polybar/custom/polybar-scripts/polybar-scripts/player-mpris-tail/player-mpris-tail.py -f '{icon} {artist} — {title}' --icon-playing '契' --icon-paused '' --icon-stopped '栗' --icon-none 'ﭥ'
 tail = true
 click-left = ~/.config/polybar/custom/polybar-scripts/polybar-scripts/player-mpris-tail/player-mpris-tail.py play-pause &
 click-middle = ~/.config/polybar/custom/polybar-scripts/polybar-scripts/player-mpris-tail/player-mpris-tail.py previous &
