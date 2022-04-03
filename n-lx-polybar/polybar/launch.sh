@@ -7,5 +7,5 @@ killall -q polybar
 while pgrep -x polybar >/dev/null; do sleep 1; done
 
 polybar center_multihead &
-polybar secondary_multihead &
-polybar tall_multihead &
+polybar left_multihead &
+polybar right_multihead &

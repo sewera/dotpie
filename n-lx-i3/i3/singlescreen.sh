@@ -1,9 +1,9 @@
 #!/bin/bash
 
 xrandr \
-  --output $(cat ~/.config/i3/monitor-tall.txt) --off \
-  --output $(cat ~/.config/i3/monitor-primary.txt) --auto --rotate normal --primary \
-  --output $(cat ~/.config/i3/monitor-secondary.txt) --off
+  --output $(cat ~/.config/i3/monitor-left.txt) --off \
+  --output $(cat ~/.config/i3/monitor-center.txt) --auto --rotate normal --primary \
+  --output $(cat ~/.config/i3/monitor-right.txt) --off
 
 sleep 0.3
 

@@ -33,7 +33,7 @@
   // > > text, lines, and columns
   "editor.tabSize": 2,
   "editor.wordWrap": "off",
-  "editor.rulers": [78, 120, 150],
+  "editor.rulers": [80, 120, 150],
   "editor.lineNumbers": "relative",
   // > > docs
   "editor.parameterHints.enabled": true,
@@ -143,6 +143,14 @@
     {
       "before": ["<leader>", "c", "b"],
       "commands": ["editor.action.blockComment"]
+    },
+    {
+      "before": ["<leader>", "m"],
+      "commands": ["editor.action.addSelectionToNextFindMatch"]
+    },
+    {
+      "before": ["<leader>", "M"],
+      "commands": ["editor.action.selectHighlights"]
     }
   ],
   "vim.visualModeKeyBindings": [
@@ -161,6 +169,14 @@
     {
       "before": ["<leader>", "c", "b"],
       "commands": ["editor.action.blockComment"]
+    },
+    {
+      "before": ["<leader>", "m"],
+      "commands": ["editor.action.addSelectionToNextFindMatch"]
+    },
+    {
+      "before": ["<leader>", "M"],
+      "commands": ["editor.action.selectHighlights"]
     }
   ],
 
@@ -208,6 +224,7 @@
   "[markdown]": {
     "editor.occurrencesHighlight": false,
     "rewrap.autoWrap.enabled": true,
+    "rewrap.wrappingColumn": 80,
     "editor.wordWrap": "on",
     "editor.quickSuggestions": {
       "other": true,

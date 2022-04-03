@@ -4,13 +4,28 @@ set surround
 set multiple-cursors
 set highlightedyank
 
+let mapleader = " "
+
 map <leader>cc :'<,'>action CommentByLineComment<CR>
 map <leader>cb :'<,'>action CommentByBlockComment<CR>
 
+nmap <leader>gpe :action GotoPreviousError<CR>
+nmap <leader>gne :action GotoNextError<CR>
 nmap <leader>gD :action GotoDeclaration<CR>
 nmap <leader>gr :action GotoDeclaration<CR>
 nmap <leader>gt :action GotoTypeDeclaration<CR>
 nmap <leader>gd :action GotoImplementation<CR>
 nmap <leader>gi :action GotoImplementation<CR>
+
+nmap <leader>R :action RenameElement<CR>
+nmap <leader>f :action ShowIntentionActions<CR>
+nmap <leader>F :action CodeCleanup<CR>
+nmap <leader>o :action ActivateStructureToolWindow<CR>
+
+nmap <leader>m :action SelectNextOccurrence<CR>
+nmap <leader>M :action SelectAllOccurrences<CR>
+
+vmap <leader>m :action SelectNextOccurrence<CR>
+vmap <leader>M :action SelectAllOccurrences<CR>
 
 set number relativenumber

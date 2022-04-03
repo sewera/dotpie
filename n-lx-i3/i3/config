@@ -233,20 +233,19 @@ bindsym XF86AudioPrev exec --no-startup-id "playerctl previous; mpc prev"
 bindsym XF86AudioStop exec --no-startup-id "playerctl stop; mpc stop"
 
 for_window [title="Microsoft Teams Notification"] floating enable
-for_window [title="Lunar Lander"] floating enable
 
 # bind workspaces to different monitors
 
-set $monitor-tall DP-0
-set $monitor-primary DP-4
-set $monitor-secondary HDMI-0
+set $monitor-left DP-2
+set $monitor-center DP-0
+set $monitor-right HDMI-0
 
-workspace $ws1 output $monitor-tall
-workspace $ws2 output $monitor-tall
-workspace $ws3 output $monitor-primary
-workspace $ws4 output $monitor-primary
-workspace $ws5 output $monitor-primary
-workspace $ws6 output $monitor-primary
-workspace $ws7 output $monitor-secondary
-workspace $ws8 output $monitor-secondary
-workspace $ws9 output $monitor-secondary
+workspace $ws1 output $monitor-left
+workspace $ws2 output $monitor-left
+workspace $ws3 output $monitor-center
+workspace $ws4 output $monitor-center
+workspace $ws5 output $monitor-center
+workspace $ws6 output $monitor-center
+workspace $ws7 output $monitor-right
+workspace $ws8 output $monitor-right
+workspace $ws9 output $monitor-right
