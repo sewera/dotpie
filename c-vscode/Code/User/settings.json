@@ -219,6 +219,9 @@
   "python.defaultInterpreterPath": "python3",
   "python.pythonPath": "/usr/local/bin/python3",
 
+  // > go
+  "go.toolsManagement.autoUpdate": true,
+
   // > markdown
   "rewrap.autoWrap.notification": "text",
   "[markdown]": {
