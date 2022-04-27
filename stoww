@@ -11,7 +11,7 @@ elif [ "$(expr substr $(uname -s) 1 5)" = "Linux" ]; then
   H_CONFDIR="$HOME"
 fi
 
-stowargs="--ignore=\\.pre"
+stowargs="--ignore='\\.pre|\\.post'"
 
 for arg in "$@"; do
   case "$arg" in
