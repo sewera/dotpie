@@ -1,8 +1,8 @@
 {
   // editing
   // > font
-  "editor.fontFamily": "SauceCodePro Nerd Font",
-  "editor.fontSize": 15,
+  "editor.fontFamily": "Source Code Pro",
+  "editor.fontSize": 16,
 
   // > autocomplete
   "editor.quickSuggestions": {

@@ -6,10 +6,10 @@
 # script outputting nothing when there are no
 # available updates
 
-output=$(checkupdates 2>/dev/null)
+output=$(echo $(/usr/lib/update-notifier/apt-check 2>&1))
 e_status=$?
 
-if [[ -z $output ]]; then
+if [[ "$output" == "0;0" ]]; then
   echo -e "%{F#494949}"
 else
   echo -e "%{F#56D7FF}"
