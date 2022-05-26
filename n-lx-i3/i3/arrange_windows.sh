@@ -1,0 +1,1 @@
+../../script/arrange_windows.sh

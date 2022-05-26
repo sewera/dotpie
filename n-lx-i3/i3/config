@@ -39,6 +39,8 @@ bindsym $mod+period exec --no-startup-id pactl set-sink-volume 0 +2% #increase s
 bindsym Scroll_Lock exec --no-startup-id /home/sewera/.config/i3/switch_kbdmap.sh
 bindsym $mod+c exec --no-startup-id xclip -i /dev/null
 bindsym $mod+b exec feh --full-screen /home/sewera/Pictures/black.jpg
+bindsym $mod+Shift+z exec --no-startup-id /home/sewera/.config/i3/arrange_windows.sh
+bindsym $mod+Shift+x exec --no-startup-id /home/sewera/.config/i3/open_teams_spotify_signal.sh
 
 # Clipcat integration
 set $launcher-clipboard-insert clipcat-menu insert

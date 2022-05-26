@@ -1,0 +1,1 @@
+../../script/open_teams_spotify_signal.sh
