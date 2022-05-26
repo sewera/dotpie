@@ -72,7 +72,6 @@ Plug 'reedes/vim-lexical'
 
 " Session plugin
 Plug 'xolox/vim-misc'
-Plug 'xolox/vim-session'
 
 " Start screen
 Plug 'mhinz/vim-startify'
@@ -369,16 +368,6 @@ let g:multi_cursor_next_key            = '<C-n>'
 let g:multi_cursor_prev_key            = '<C-p>'
 let g:multi_cursor_skip_key            = '<C-s>'
 let g:multi_cursor_quit_key            = '<Esc>'
-
-" Vim sessions
-" Don't save hidden and unloaded buffers in sessions.
-let g:session_directory = '~/cloud/code/vim-sessions/'
-let g:session_autosave = 'yes'
-let g:session_autosave_periodic = 5
-let g:session_autoload = 'no'
-
-nnoremap <leader>W :SaveSession 
-nnoremap <leader>w :OpenSession 
 
 " Git (fugitive)
 nnoremap <leader>Gs :Git status<CR>
