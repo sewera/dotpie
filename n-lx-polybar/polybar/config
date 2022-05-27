@@ -638,8 +638,8 @@ exec = ~/.config/polybar/custom/mpd.sh
 
 [module/player-mpris-tail]
 type = custom/script
-exec = ~/.config/polybar/custom/polybar-scripts/polybar-scripts/player-mpris-tail/player-mpris-tail.py -f '{icon} {artist} — {title}' --icon-playing '契' --icon-paused '' --icon-stopped '栗' --icon-none 'ﭥ'
+exec = ~/.config/polybar/custom/player-mpris-tail.py -f '{icon} {artist} — {title}' --icon-playing '契' --icon-paused '' --icon-stopped '栗' --icon-none 'ﭥ'
 tail = true
-click-left = ~/.config/polybar/custom/polybar-scripts/polybar-scripts/player-mpris-tail/player-mpris-tail.py play-pause &
-click-middle = ~/.config/polybar/custom/polybar-scripts/polybar-scripts/player-mpris-tail/player-mpris-tail.py previous &
-click-right = ~/.config/polybar/custom/polybar-scripts/polybar-scripts/player-mpris-tail/player-mpris-tail.py next &
+click-left = ~/.config/polybar/custom/player-mpris-tail.py play-pause &
+click-middle = ~/.config/polybar/custom/player-mpris-tail.py previous &
+click-right = ~/.config/polybar/custom/player-mpris-tail.py next &
