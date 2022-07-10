@@ -236,9 +236,9 @@ for_window [title="Microsoft Teams Notification"] floating enable
 
 # bind workspaces to different monitors
 
-set $monitor-left DP-2
-set $monitor-center DP-0
-set $monitor-right HDMI-0
+set $monitor-left DP-4
+set $monitor-center DP-2
+set $monitor-right DP-0
 
 workspace $ws1 output $monitor-left
 workspace $ws2 output $monitor-left

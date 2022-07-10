@@ -53,7 +53,7 @@ alert = #FF410D
 
 [bar/center_multihead]
 
-monitor = ${env:MONITOR:DP-0}
+monitor = ${env:MONITOR:DP-2}
 monitor-exact = true
 width = 100%
 height = 30
@@ -100,7 +100,7 @@ dpi-y = 94
 
 
 [bar/left_multihead]
-monitor = ${env:MONITOR:DP-2}
+monitor = ${env:MONITOR:DP-4}
 monitor-exact = true
 width = 100%
 height = 30
@@ -142,7 +142,7 @@ dpi-y = 94
 
 
 [bar/right_multihead]
-monitor = ${env:MONITOR:HDMI-0}
+monitor = ${env:MONITOR:DP-0}
 monitor-exact = true
 width = 100%
 height = 30
