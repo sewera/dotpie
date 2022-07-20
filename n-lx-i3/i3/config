@@ -19,9 +19,6 @@ exec --no-startup-id xset dpms 0 0 0
 exec --no-startup-id redshift
 exec_always --no-startup-id setxkbmap pl &
 exec --no-startup-id picom &
-exec --no-startup-id /usr/lib/kdeconnectd
-exec --no-startup-id kdeconnect-indicator
-exec --no-startup-id mopidy
 exec_always --no-startup-id /home/jazz/.config/polybar/launch.sh &
 exec --no-startup-id mpDris2
 bindsym Print exec --no-startup-id spectacle
