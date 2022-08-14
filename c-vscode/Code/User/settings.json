@@ -20,6 +20,8 @@
   "editor.wordBasedSuggestions": true,
 
   // > behavior and appearance
+  "window.titleBarStyle": "custom",
+  "workbench.editor.labelFormat": "short",
   // > > theme
   "workbench.colorTheme": "One Dark Pro",
   "workbench.colorCustomizations": {
@@ -265,5 +267,6 @@
       "comments": false,
       "strings": true
     }
-  }
+  },
+  "cSpell.userWords": ["kata", "notipie"]
 }
