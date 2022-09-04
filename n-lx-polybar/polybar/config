@@ -313,7 +313,7 @@ icon-consume = 
 icon-consume-font = 2
 
 toggle-on-foreground = #eee
-toggle-off-foreground = #666
+toggle-off-foreground = #666666
 
 ;label-song-maxlen = 25
 ;label-song-ellipsis = true
@@ -366,23 +366,16 @@ type = internal/network
 interface = wlp8s0f3u2
 interval = 3.0
 
-format-connected = <ramp-signal> <label-connected>
+format-connected = "直 <label-connected>"
 format-connected-underline = ${colors.primary}
 label-connected = %essid%
 
 label-disconnected = 睊
-label-disconnected-foreground = #666
+label-disconnected-foreground = #666666
 format-disconnected = <label-disconnected>
 format-disconnected-underline = ${colors.secondary}
 ;label-disconnected = %ifname% disconnected
 ;label-disconnected-foreground = ${colors.foreground-alt}
-
-ramp-signal-0 = "直20%: " 
-ramp-signal-1 = "直40%: "
-ramp-signal-2 = "直60%: "
-ramp-signal-3 = "直80%: "
-ramp-signal-4 = "直100%: "
-ramp-signal-foreground = ${colors.foreground-alt}
 
 [module/eth]
 type = internal/network
@@ -399,7 +392,7 @@ label-connected = %local_ip%
 format-disconnected = <label-disconnected>
 format-disconnected-underline = ${colors.secondary}
 label-disconnected = 
-label-disconnected-foreground = #666
+label-disconnected-foreground = #666666
 
 [module/date]
 type = internal/date
@@ -601,7 +594,7 @@ interval = 2
 
 format-volume-prefix = "墳 | "
 format-muted-prefix = "婢 | "
-format-muted-foreground = #666
+format-muted-foreground = #666666
 
 [module/cloud]
 type = custom/text

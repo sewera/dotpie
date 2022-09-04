@@ -10,7 +10,7 @@ output=$(checkupdates 2>/dev/null)
 e_status=$?
 
 if [[ -z $output ]]; then
-  echo -e "%{F#494949}"
+  echo -e "%{F#666666}"
 else
   echo -e "%{F#56D7FF}"
 fi
