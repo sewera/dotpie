@@ -172,7 +172,7 @@ font-3 = "NotoSans Nerd Font:pixelsize=16:antialias=true;1"
 
 modules-left = i3
 modules-center = player-mpris-tail pulseaudio
-modules-right = redshift xkeyboard eth updates date
+modules-right = redshift xkeyboard wlan eth updates date
 
 scroll-up = i3wm-wsprev
 scroll-down = i3wm-wsnext
@@ -363,7 +363,7 @@ label = %percentage_used%%
 
 [module/wlan]
 type = internal/network
-interface = wlp6s0
+interface = wlp8s0f3u2
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>

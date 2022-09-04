@@ -18,6 +18,7 @@
   "editor.suggest.localityBonus": true,
   "editor.suggestSelection": "first",
   "editor.wordBasedSuggestions": true,
+  "editor.stickyScroll.enabled": true,
 
   // > behavior and appearance
   "window.titleBarStyle": "custom",
