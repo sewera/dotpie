@@ -30,10 +30,8 @@ bindsym $mod+m exec --no-startup-id /home/jazz/.config/i3/monitor.sh
 bindsym $mod+Shift+m exec --no-startup-id /home/jazz/.config/i3/dualscreen_alt.sh
 bindsym $mod+n exec --no-startup-id /home/jazz/.config/i3/dualscreen.sh
 bindsym $mod+Shift+n exec --no-startup-id /home/jazz/.config/i3/singlescreen.sh
-bindsym $mod+comma exec --no-startup-id pactl set-sink-volume alsa_output.pci-0000_09_00.3.analog-stereo -2%
-#; exec --no-startup-id pactl set-sink-volume alsa_output.usb-Creative_Technology_Ltd_Sound_Blaster_Play__3_00080951-00.analog-stereo -2%
-bindsym $mod+period exec --no-startup-id pactl set-sink-volume alsa_output.pci-0000_09_00.3.analog-stereo +2%
-#; exec --no-startup-id pactl set-sink-volume alsa_output.usb-Creative_Technology_Ltd_Sound_Blaster_Play__3_00080951-00.analog-stereo +2%
+bindsym $mod+comma exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -2%
+bindsym $mod+period exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +2%
 bindsym Scroll_Lock exec --no-startup-id /home/jazz/.config/i3/switch_kbdmap.sh
 bindsym $mod+c exec --no-startup-id xclip -i /dev/null
 bindsym $mod+b exec feh --full-screen /home/jazz/Pictures/black.jpg
@@ -220,9 +218,9 @@ client.focused_inactive $bg $bg $tx
 client.urgent	$rd $rd $tx
 
 bindsym $mod+z exec --no-startup-id wallschctl lock
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +2% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -2% #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle # mute sound
 bindsym XF86AudioPlay exec --no-startup-id "playerctl play-pause; mpc toggle"
 bindsym XF86AudioPause exec --no-startup-id "playerctl pause; mpc pause"
 bindsym XF86AudioNext exec --no-startup-id "playerctl next; mpc next"
