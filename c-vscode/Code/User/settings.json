@@ -50,6 +50,7 @@
   // > > handling files
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
   // > > terminal
   "terminal.integrated.tabs.enabled": true,
   // > > extensions
