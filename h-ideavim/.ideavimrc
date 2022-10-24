@@ -5,28 +5,42 @@ set multiple-cursors
 set highlightedyank
 
 let mapleader = " "
+set scrolloff = 8
+set showmode
+set showcmd
+set incsearch
+set hlsearch
 
-map <leader>cc :'<,'>action CommentByLineComment<CR>
-map <leader>cb :'<,'>action CommentByBlockComment<CR>
+nmap <leader>gpe <action>(GotoPreviousError)
+nmap <leader>gne <action>(GotoNextError)
+nmap <leader>gD <action>(GotoDeclaration)
+nmap <leader>gr <action>(GotoDeclaration)
+nmap <leader>gt <action>(GotoTypeDeclaration)
+nmap <leader>gd <action>(GotoImplementation)
+nmap <leader>gi <action>(GotoImplementation)
 
-nmap <leader>gpe :action GotoPreviousError<CR>
-nmap <leader>gne :action GotoNextError<CR>
-nmap <leader>gD :action GotoDeclaration<CR>
-nmap <leader>gr :action GotoDeclaration<CR>
-nmap <leader>gt :action GotoTypeDeclaration<CR>
-nmap <leader>gd :action GotoImplementation<CR>
-nmap <leader>gi :action GotoImplementation<CR>
+nmap <leader>R <action>(RenameElement)
+nmap <leader>r <action>(Refactorings.QuickListPopupAction)
+vmap <leader>r <action>(Refactorings.QuickListPopupAction)
+nmap <leader>f <action>(ShowIntentionActions)
+nmap <leader>F <action>(CodeCleanup)
+nmap <leader>o <action>(ActivateStructureToolWindow)
 
-nmap <leader>R :action RenameElement<CR>
-nmap <leader>f :action ShowIntentionActions<CR>
-nmap <leader>F :action CodeCleanup<CR>
-nmap <leader>o :action ActivateStructureToolWindow<CR>
+nmap <C-K> <action>(MoveStatementUp)
+nmap <C-J> <action>(MoveStatementDown)
 
-nmap <leader>m :action SelectNextOccurrence<CR>
-nmap <leader>M :action SelectAllOccurrences<CR>
+nmap <leader>m <action>(SelectNextOccurrence)
+nmap <leader>M <action>(SelectAllOccurrences)
 
-vmap <leader>m :action SelectNextOccurrence<CR>
-vmap <leader>M :action SelectAllOccurrences<CR>
+vmap <leader>m <action>(SelectNextOccurrence)
+vmap <leader>M <action>(SelectAllOccurrences)
+
+nmap <C-P> <action>(GotoFile)
+nmap <C-S-P> <action>(GotoAction)
+
+nmap L :tabnext<CR>
+nmap H :tabprev<CR>
+nmap <Esc> :noh<CR>
 
 set number relativenumber
 
@@ -61,3 +75,5 @@ sethandler <C-Y> a:vim
 sethandler <C-[> a:vim
 sethandler <C-\> a:vim
 sethandler <C-]> a:vim
+sethandler <C-S-P> a:vim
+sethandler <C-T> a:vim

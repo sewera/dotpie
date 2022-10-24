@@ -54,6 +54,10 @@ if type exa &> /dev/null; then
   alias tree.='exa -a --tree --level=8 --git-ignore'
 fi
 
+if uname -a | grep -qi Ubuntu; then
+  alias yay='sudo apt update && sudo apt upgrade'
+fi
+
 alias grep='grep --color=auto'
 alias gist='git status -s'
 
@@ -81,3 +85,5 @@ export PATH="${PATH}:/home/sewera/.cargo/bin/navi"
 export FZF_DEFAULT_OPTS="--height=16 --layout=reverse"
 
 eval "$(navi widget zsh)"
+
+export PATH=$PATH:/usr/local/go/bin

@@ -167,7 +167,7 @@ font-2 = "NotoSans Nerd Font:pixelsize=11:antialias=true;1"
 font-3 = "NotoSans Nerd Font:pixelsize=16:antialias=true;1"
 
 modules-left = i3
-modules-center = player-mpris-tail pulseaudio
+modules-center = player-mpris-tail pulseaudio pasource
 modules-right = redshift xkeyboard eth updates date
 
 tray-position = right
@@ -602,6 +602,12 @@ interval = 2
 format-volume-prefix = "墳 | "
 format-muted-prefix = "婢 | "
 format-muted-foreground = #666
+
+[module/pasource]
+type = custom/script
+exec = ~/.config/polybar/custom/pasource.sh
+click-left = "pactl set-source-mute @DEFAULT_SOURCE@ toggle"
+click-right = "pavucontrol &"
 
 [module/cloud]
 type = custom/text

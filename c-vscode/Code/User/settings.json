@@ -1,7 +1,7 @@
 {
   // editing
   // > font
-  "editor.fontFamily": "Source Code Pro",
+  "editor.fontFamily": "'Source Code Pro', 'SauceCodePro Nerd Font', monospace",
   "editor.fontSize": 16,
 
   // > autocomplete
@@ -49,6 +49,8 @@
   "explorer.confirmDelete": false,
   // > > terminal
   "terminal.integrated.tabs.enabled": true,
+  "terminal.integrated.fontFamily": "'Source Code Pro', 'SauceCodePro Nerd Font', monospace",
+  "terminal.integrated.fontSize": 13,
   // > > extensions
   // > > > Installed extensions:
   // bradlc.vscode-tailwindcss
@@ -241,8 +243,6 @@
   // > > linting
   "eslint.options": {},
   "eslint.codeActionsOnSave.mode": "all",
-  // > > testing
-  "jest.jestCommandLine": "yarn test",
 
   // > python
   "python.languageServer": "Pylance",
@@ -264,6 +264,7 @@
       "other": true,
       "comments": false,
       "strings": true
-    }
+    },
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
   }
 }
