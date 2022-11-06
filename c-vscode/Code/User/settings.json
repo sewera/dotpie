@@ -31,6 +31,12 @@
       "editorCursor.background": "#192228",
       "terminalCursor.foreground": "#78909c",
       "terminalCursor.background": "#192228"
+    },
+    "[Atom One Light]": {
+      "editorCursor.foreground": "#d1d1d1",
+      "editorCursor.background": "#42789c",
+      "terminalCursor.foreground": "#d1d1d1",
+      "terminalCursor.background": "#42789c"
     }
   },
   // > > text, lines, and columns
