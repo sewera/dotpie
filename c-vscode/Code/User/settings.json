@@ -276,5 +276,8 @@
       "strings": true
     }
   },
-  "cSpell.userWords": ["kata", "notipie"]
+  "cSpell.userWords": ["kata", "notipie"],
+  "[astro]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
