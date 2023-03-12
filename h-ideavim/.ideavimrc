@@ -1,27 +1,22 @@
-# plugin emulators
 set commentary
 set easymotion
 set surround
 set multiple-cursors
 set highlightedyank
 
-# leader = space
 let mapleader = " "
 
-set scrolloff = 8
+set scrolloff=8
 set showmode
 set showcmd
 set incsearch
 set hlsearch
 set number relativenumber
 
-nmap <leader>gpe <action>(GotoPreviousError)
-nmap <leader>gne <action>(GotoNextError)
-nmap <leader>gD <action>(GotoDeclaration)
-nmap <leader>gr <action>(GotoDeclaration)
-nmap <leader>gt <action>(GotoTypeDeclaration)
-nmap <leader>gd <action>(GotoImplementation)
-nmap <leader>gi <action>(GotoImplementation)
+nmap gd <action>(GotoDeclaration)
+nmap gr <action>(GotoDeclaration)
+nmap gt <action>(GotoTest)
+nmap gi <action>(GotoImplementation)
 
 nmap <leader>R <action>(RenameElement)
 nmap <leader>r <action>(Refactorings.QuickListPopupAction)
@@ -32,11 +27,18 @@ nmap <leader>o <action>(ActivateStructureToolWindow)
 
 nmap <C-K> <action>(MoveStatementUp)
 nmap <C-J> <action>(MoveStatementDown)
+vmap <C-K> <action>(MoveLineUp)
+vmap <C-J> <action>(MoveLineDown)
 
 nmap <leader>m <action>(SelectNextOccurrence)
 nmap <leader>M <action>(SelectAllOccurrences)
 vmap <leader>m <action>(SelectNextOccurrence)
 vmap <leader>M <action>(SelectAllOccurrences)
+
+nmap <C-O> <action>(Back)
+nmap <C-I> <action>(Forward)
+
+nmap K <action>(QuickJavaDoc)
 
 nmap <C-P> <action>(GotoFile)
 nmap <C-S-P> <action>(GotoAction)
@@ -80,3 +82,4 @@ sethandler <C-\> a:vim
 sethandler <C-]> a:vim
 sethandler <C-S-P> a:vim
 sethandler <C-T> a:vim
+sethandler <C-`> a:vim
