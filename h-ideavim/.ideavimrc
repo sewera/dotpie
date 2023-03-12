@@ -1,31 +1,82 @@
+# plugin emulators
 set commentary
 set easymotion
 set surround
 set multiple-cursors
 set highlightedyank
 
+# leader = space
 let mapleader = " "
 
-map <leader>cc :'<,'>action CommentByLineComment<CR>
-map <leader>cb :'<,'>action CommentByBlockComment<CR>
-
-nmap <leader>gpe :action GotoPreviousError<CR>
-nmap <leader>gne :action GotoNextError<CR>
-nmap <leader>gD :action GotoDeclaration<CR>
-nmap <leader>gr :action GotoDeclaration<CR>
-nmap <leader>gt :action GotoTypeDeclaration<CR>
-nmap <leader>gd :action GotoImplementation<CR>
-nmap <leader>gi :action GotoImplementation<CR>
-
-nmap <leader>R :action RenameElement<CR>
-nmap <leader>f :action ShowIntentionActions<CR>
-nmap <leader>F :action CodeCleanup<CR>
-nmap <leader>o :action ActivateStructureToolWindow<CR>
-
-nmap <leader>m :action SelectNextOccurrence<CR>
-nmap <leader>M :action SelectAllOccurrences<CR>
-
-vmap <leader>m :action SelectNextOccurrence<CR>
-vmap <leader>M :action SelectAllOccurrences<CR>
-
+set scrolloff = 8
+set showmode
+set showcmd
+set incsearch
+set hlsearch
 set number relativenumber
+
+nmap <leader>gpe <action>(GotoPreviousError)
+nmap <leader>gne <action>(GotoNextError)
+nmap <leader>gD <action>(GotoDeclaration)
+nmap <leader>gr <action>(GotoDeclaration)
+nmap <leader>gt <action>(GotoTypeDeclaration)
+nmap <leader>gd <action>(GotoImplementation)
+nmap <leader>gi <action>(GotoImplementation)
+
+nmap <leader>R <action>(RenameElement)
+nmap <leader>r <action>(Refactorings.QuickListPopupAction)
+vmap <leader>r <action>(Refactorings.QuickListPopupAction)
+nmap <leader>f <action>(ShowIntentionActions)
+nmap <leader>F <action>(CodeCleanup)
+nmap <leader>o <action>(ActivateStructureToolWindow)
+
+nmap <C-K> <action>(MoveStatementUp)
+nmap <C-J> <action>(MoveStatementDown)
+
+nmap <leader>m <action>(SelectNextOccurrence)
+nmap <leader>M <action>(SelectAllOccurrences)
+vmap <leader>m <action>(SelectNextOccurrence)
+vmap <leader>M <action>(SelectAllOccurrences)
+
+nmap <C-P> <action>(GotoFile)
+nmap <C-S-P> <action>(GotoAction)
+nmap <C-`> <action>(ActivateTerminalToolWindow)
+
+nmap L :tabnext<CR>
+nmap H :tabprev<CR>
+
+nmap <Esc> :noh<CR>
+
+sethandler <C-2> a:vim
+sethandler <C-S-2> a:vim
+sethandler <C-6> a:vim
+sethandler <C-S-6> a:vim
+sethandler <C-A> a:vim
+sethandler <C-B> a:vim
+sethandler <C-C> a:vim
+sethandler <C-D> a:vim
+sethandler <C-E> a:vim
+sethandler <C-F> a:vim
+sethandler <C-G> a:vim
+sethandler <C-H> a:vim
+sethandler <C-I> a:vim
+sethandler <C-J> a:vim
+sethandler <C-K> a:vim
+sethandler <C-L> a:vim
+sethandler <C-M> a:vim
+sethandler <C-N> a:vim
+sethandler <C-O> a:vim
+sethandler <C-P> a:vim
+sethandler <C-Q> a:vim
+sethandler <C-R> a:vim
+sethandler <C-S> a:vim
+sethandler <C-U> a:vim
+sethandler <C-V> a:vim
+sethandler <C-W> a:vim
+sethandler <C-X> a:vim
+sethandler <C-Y> a:vim
+sethandler <C-[> a:vim
+sethandler <C-\> a:vim
+sethandler <C-]> a:vim
+sethandler <C-S-P> a:vim
+sethandler <C-T> a:vim
