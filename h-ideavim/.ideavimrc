@@ -44,6 +44,8 @@ nmap <C-P> <action>(GotoFile)
 nmap <C-S-P> <action>(GotoAction)
 nmap <C-`> <action>(ActivateTerminalToolWindow)
 
+nmap <C-X> <action>(Run)
+
 nmap L :tabnext<CR>
 nmap H :tabprev<CR>
 
