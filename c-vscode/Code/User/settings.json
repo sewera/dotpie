@@ -24,7 +24,7 @@
   "window.titleBarStyle": "custom",
   "workbench.editor.labelFormat": "short",
   // > > theme
-  "workbench.colorTheme": "One Dark Pro",
+  "workbench.colorTheme": "One Dark Pro Darker",
   "workbench.colorCustomizations": {
     "[One Dark Pro]": {
       "editorCursor.foreground": "#78909c",
@@ -114,76 +114,36 @@
   "vim.leader": " ",
   "vim.normalModeKeyBindings": [
     {
-      "before": ["<leader>", "g", "p", "e"],
-      "commands": ["editor.action.marker.prev"]
-    },
-    {
-      "before": ["<leader>", "g", "n", "e"],
-      "commands": ["editor.action.marker.next"]
-    },
-    {
-      "before": ["<leader>", "g", "p", "w"],
-      "commands": ["editor.action.marker.prev"]
-    },
-    {
-      "before": ["<leader>", "g", "n", "w"],
-      "commands": ["editor.action.marker.next"]
-    },
-    {
-      "before": ["<leader>", "g", "d"],
+      "before": ["g", "d"],
       "commands": ["editor.action.revealDefinition"]
     },
     {
-      "before": ["<leader>", "g", "D"],
-      "commands": ["editor.action.revealDeclaration"]
-    },
-    {
-      "before": ["<leader>", "g", "i"],
+      "before": ["g", "i"],
       "commands": ["editor.action.goToImplementation"]
     },
     {
-      "before": ["<leader>", "g", "t"],
-      "commands": ["editor.action.goToTypeDefinition"]
-    },
-    {
-      "before": ["<leader>", "g", "r"],
+      "before": ["g", "t"],
       "commands": ["editor.action.goToReferences"]
     },
     {
-      "before": ["<leader>", "R"],
+      "before": ["g", "r"],
+      "commands": ["editor.action.goToReferences"]
+    },
+    {
+      "before": ["<leader>", "r"],
       "commands": ["editor.action.refactor"]
     },
     {
-      "before": ["<leader>", "f"],
-      "commands": ["editor.action.quickFix"]
-    },
-    {
-      "before": ["<leader>", "F"],
-      "commands": ["editor.action.autoFix"]
+      "before": ["<leader>", "R"],
+      "commands": ["editor.action.rename"]
     },
     {
       "before": ["K"],
       "commands": ["editor.action.showHover"]
     },
     {
-      "before": ["<leader>", "o"],
-      "commands": ["outline.focus"]
-    },
-    {
-      "before": ["<leader>", "c", "<space>"],
+      "before": ["g", "c", "c"],
       "commands": ["editor.action.commentLine"]
-    },
-    {
-      "before": ["<leader>", "c", "u"],
-      "commands": ["editor.action.removeCommentLine"]
-    },
-    {
-      "before": ["<leader>", "c", "c"],
-      "commands": ["editor.action.addCommentLine"]
-    },
-    {
-      "before": ["<leader>", "c", "b"],
-      "commands": ["editor.action.blockComment"]
     },
     {
       "before": ["<leader>", "m"],
@@ -192,32 +152,40 @@
     {
       "before": ["<leader>", "M"],
       "commands": ["editor.action.selectHighlights"]
+    },
+    {
+      "before": ["<C-X>"],
+      "commands": ["workbench.action.tasks.build"]
+    },
+    {
+      "before": ["<C-J>"],
+      "commands": ["editor.action.moveLinesDownAction"]
+    },
+    {
+      "before": ["<C-K>"],
+      "commands": ["editor.action.moveLinesUpAction"]
     }
   ],
   "vim.visualModeKeyBindings": [
     {
-      "before": ["<leader>", "c", "<space>"],
-      "commands": ["editor.action.commentline"]
-    },
-    {
-      "before": ["<leader>", "c", "u"],
-      "commands": ["editor.action.removeCommentLine"]
-    },
-    {
-      "before": ["<leader>", "c", "c"],
-      "commands": ["editor.action.addCommentLine"]
-    },
-    {
-      "before": ["<leader>", "c", "b"],
-      "commands": ["editor.action.blockComment"]
-    },
-    {
       "before": ["<leader>", "m"],
       "commands": ["editor.action.addSelectionToNextFindMatch"]
     },
     {
       "before": ["<leader>", "M"],
       "commands": ["editor.action.selectHighlights"]
+    },
+    {
+      "before": ["g", "c"],
+      "commands": ["editor.action.commentLine"]
+    },
+    {
+      "before": ["<C-J>"],
+      "commands": ["editor.action.moveLinesDownAction"]
+    },
+    {
+      "before": ["<C-K>"],
+      "commands": ["editor.action.moveLinesUpAction"]
     }
   ],
 
@@ -274,9 +242,10 @@
       "other": true,
       "comments": false,
       "strings": true
-    }
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "cSpell.userWords": ["kata", "notipie"],
+  "cSpell.userWords": ["Blazej", "fizzbuzz", "kata", "notipie", "Sewera"],
   "[astro]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
