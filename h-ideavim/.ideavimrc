@@ -1,56 +1,119 @@
+" create comments with <n>gcc / <v>gc
 set commentary
-set easymotion
+" <v>S or <n>cs to surround or change surround
 set surround
-set multiple-cursors
+" highlight what is being copied
 set highlightedyank
 
+" <space> as <leader>
 let mapleader = " "
 
+" 8 lines above or below always visible on the screen
 set scrolloff=8
-set showmode
-set showcmd
+" search options
 set incsearch
-set hlsearch
+set wrapscan
+" don't play sound on error
+set visualbell
+" display current line number and relative line numbers above and below
 set number relativenumber
+" don't change the mode when refactoring
+set idearefactormode=keep
+set lookupkeys=<Up>,<Down>,<Left>,<Right>,<C-N>,<C-P>,<Tab>
+" don't use vim in dialog boxes
+set ideavimsupport=''
+" use smart join
+set ideajoin
 
+" use system clipboard
+set clipboard=unnamedplus,unnamed
+" clipboard history menu
+nmap <leader>p <action>(PasteMultiple)
+
+" reselect after indenting
+vnoremap < <gv
+vnoremap > >gv
+
+" code navigation
 nmap gd <action>(GotoDeclaration)
 nmap gr <action>(GotoDeclaration)
 nmap gt <action>(GotoTest)
 nmap gi <action>(GotoImplementation)
 
+nmap [[ <action>(MethodUp)
+nmap ]] <action>(MethodDown)
+
+nmap <C-O> <action>(Back)
+nmap <C-I> <action>(Forward)
+
+" access documentation for the current symbol
+nmap K <action>(QuickJavaDoc)
+
+" code refactoring and manipulation
 nmap <leader>R <action>(RenameElement)
 nmap <leader>r <action>(Refactorings.QuickListPopupAction)
 vmap <leader>r <action>(Refactorings.QuickListPopupAction)
-nmap <leader>f <action>(ShowIntentionActions)
-nmap <leader>F <action>(CodeCleanup)
-nmap <leader>o <action>(ActivateStructureToolWindow)
+nmap <leader>e <action>(ShowIntentionActions)
 
 nmap <C-K> <action>(MoveStatementUp)
 nmap <C-J> <action>(MoveStatementDown)
 vmap <C-K> <action>(MoveLineUp)
 vmap <C-J> <action>(MoveLineDown)
 
+" multi-cursor
 nmap <leader>m <action>(SelectNextOccurrence)
 nmap <leader>M <action>(SelectAllOccurrences)
 vmap <leader>m <action>(SelectNextOccurrence)
 vmap <leader>M <action>(SelectAllOccurrences)
 
-nmap <C-O> <action>(Back)
-nmap <C-I> <action>(Forward)
+" word-based autocompletion
+imap <C-N> <action>(HippieCompletion)
+imap <C-P> <action>(HippieBackwardCompletion)
 
-nmap K <action>(QuickJavaDoc)
-
-nmap <C-P> <action>(GotoFile)
-nmap <C-S-P> <action>(GotoAction)
-nmap <C-`> <action>(ActivateTerminalToolWindow)
-
-nmap <C-X> <action>(Run)
-
+" IntelliJ window tools and navigation
 nmap L :tabnext<CR>
 nmap H :tabprev<CR>
 
-nmap <Esc> :noh<CR>
+" <C- Control
+nmap <C-P> <action>(GotoFile)
+nmap <C-S-P> <action>(GotoAction)
+" <D- Command (Mac)
+nmap <D-P> <action>(GotoFile)
+nmap <D-S-P> <action>(GotoAction)
 
+nmap <C-X> <action>(Run)
+nmap <C-S-X> <action>(CompileDirty)
+
+nmap <leader>tt <action>(ActivateTerminalToolWindow)
+nmap <leader>tc <action>(ActivateCommitToolWindow)
+nmap <leader>tp <action>(ActivateProjectToolWindow)
+nmap <leader>ts <action>(ActivateServicesToolWindow)
+nmap <leader>tg <action>(ActivateVersionControlToolWindow)
+nmap <leader>td <action>(ActivateTODOToolWindow)
+nmap <leader>tk <action>(tasks.goto)
+" focus on the editor
+nmap <leader>tf <action>(HideAllWindows)
+
+nmap <leader>no <action>(OpenFile)
+nmap <leader>nf <action>(NewFile)
+nmap <leader>ns <action>(NewScratchFile)
+
+" Git (VCS)
+nmap <leader>gc <action>(ActivateCommitToolWindow)
+nmap <leader>gp <action>(Vcs.Push)
+nmap <leader>gu <action>(Vcs.UpdateProject)
+nmap <leader>gb <action>(GitCheckoutFromInputAction)
+
+" Find and replace
+nmap / <action>(Find)
+vmap / <action>(Find)
+nmap ? <action>(Replace)
+vmap ? <action>(Replace)
+
+nmap <leader>ff <action>(FindInPath)
+nmap <leader>fr <action>(ReplaceInPath)
+
+" set ideavim to handle all keyboard shortcuts
 sethandler <C-2> a:vim
 sethandler <C-S-2> a:vim
 sethandler <C-6> a:vim
@@ -85,3 +148,5 @@ sethandler <C-]> a:vim
 sethandler <C-S-P> a:vim
 sethandler <C-T> a:vim
 sethandler <C-`> a:vim
+sethandler <D-P> a:vim
+sethandler <D-S-P> a:vim
