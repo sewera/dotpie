@@ -53,7 +53,8 @@ nmap K <action>(QuickJavaDoc)
 nmap <leader>R <action>(RenameElement)
 nmap <leader>r <action>(Refactorings.QuickListPopupAction)
 vmap <leader>r <action>(Refactorings.QuickListPopupAction)
-nmap <leader>e <action>(ShowIntentionActions)
+nmap x <action>(ShowIntentionActions)
+vmap x <action>(ShowIntentionActions)
 
 nmap <C-K> <action>(MoveStatementUp)
 nmap <C-J> <action>(MoveStatementDown)
@@ -81,10 +82,14 @@ nmap <C-S-P> <action>(GotoAction)
 nmap <D-P> <action>(GotoFile)
 nmap <D-S-P> <action>(GotoAction)
 
+" run last target
 nmap <C-X> <action>(Run)
-nmap <C-S-X> <action>(CompileDirty)
+" run currently selected class or method
+nmap X <action>(RunClass)
+" debug last target
+nmap <C-S-X> <action>(Debug)
 
-nmap <leader>tt <action>(ActivateTerminalToolWindow)
+nmap <leader>tx <action>(ActivateTerminalToolWindow)
 nmap <leader>tc <action>(ActivateCommitToolWindow)
 nmap <leader>tp <action>(ActivateProjectToolWindow)
 nmap <leader>ts <action>(ActivateServicesToolWindow)
@@ -92,7 +97,7 @@ nmap <leader>tg <action>(ActivateVersionControlToolWindow)
 nmap <leader>td <action>(ActivateTODOToolWindow)
 nmap <leader>tk <action>(tasks.goto)
 " focus on the editor
-nmap <leader>tf <action>(HideAllWindows)
+nmap <leader>tt <action>(HideAllWindows)
 
 nmap <leader>no <action>(OpenFile)
 nmap <leader>nf <action>(NewFile)
