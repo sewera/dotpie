@@ -46,6 +46,11 @@ nmap ]] <action>(MethodDown)
 nmap <C-O> <action>(Back)
 nmap <C-I> <action>(Forward)
 
+" move one CamelHump at a time
+nnoremap <A-W> [w
+nnoremap <A-E> ]w
+nnoremap <A-B> [b
+
 " access documentation for the current symbol
 nmap K <action>(QuickJavaDoc)
 
@@ -55,8 +60,8 @@ nmap <leader>r <action>(Refactorings.QuickListPopupAction)
 vmap <leader>r <action>(Refactorings.QuickListPopupAction)
 nmap <leader>s <action>(SurroundWith)
 vmap <leader>s <action>(SurroundWith)
-nmap x <action>(ShowIntentionActions)
-vmap x <action>(ShowIntentionActions)
+nmap <leader><space> <action>(ShowIntentionActions)
+vmap <leader><space> <action>(ShowIntentionActions)
 
 nmap <C-K> <action>(MoveStatementUp)
 nmap <C-J> <action>(MoveStatementDown)
