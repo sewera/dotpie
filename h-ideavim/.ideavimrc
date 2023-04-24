@@ -39,6 +39,7 @@ nmap gd <action>(GotoDeclaration)
 nmap gr <action>(GotoDeclaration)
 nmap gt <action>(GotoTest)
 nmap gi <action>(GotoImplementation)
+nmap ge <action>(GotoNextError)
 
 nmap [[ <action>(MethodUp)
 nmap ]] <action>(MethodDown)
@@ -105,8 +106,12 @@ nmap <leader>tc <action>(ActivateCommitToolWindow)
 nmap <leader>tp <action>(ActivateProjectToolWindow)
 nmap <leader>ts <action>(ActivateServicesToolWindow)
 nmap <leader>tg <action>(ActivateVersionControlToolWindow)
+nmap <leader>te <action>(ActivateProblemsViewToolWindow)
 nmap <leader>td <action>(ActivateTODOToolWindow)
 nmap <leader>tk <action>(tasks.goto)
+" manage notifications
+nmap <leader>tnn <action>(ActivateNotificationsToolWindow)
+nmap <leader>tnc <action>(ClearAllNotifications)
 " focus on the editor
 nmap <leader>tt <action>(HideAllWindows)
 
