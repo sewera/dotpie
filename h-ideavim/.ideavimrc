@@ -118,7 +118,7 @@ nmap <leader>ns <action>(NewScratchFile)
 nmap <leader>gc <action>(ActivateCommitToolWindow)
 nmap <leader>gp <action>(Vcs.Push)
 nmap <leader>gu <action>(Vcs.UpdateProject)
-nmap <leader>gb <action>(GitCheckoutFromInputAction)
+nmap <leader>gb <action>(Git.Branches)
 
 " Find and replace
 nmap / <action>(Find)
