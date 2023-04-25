@@ -54,6 +54,7 @@ nnoremap <A-B> [b
 
 " access documentation for the current symbol
 nmap K <action>(QuickJavaDoc)
+nmap <A-K> <action>(ShowErrorDescription)
 
 " code refactoring and manipulation
 nmap <leader>R <action>(RenameElement)
