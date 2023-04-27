@@ -133,7 +133,9 @@ nmap ? <action>(Replace)
 vmap ? <action>(Replace)
 
 nmap <leader>ff <action>(FindInPath)
+vmap <leader>ff <action>(FindInPath)
 nmap <leader>fr <action>(ReplaceInPath)
+vmap <leader>fr <action>(ReplaceInPath)
 
 " set ideavim to handle all keyboard shortcuts
 sethandler <C-2> a:vim
