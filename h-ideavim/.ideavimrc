@@ -170,5 +170,6 @@ sethandler <C-]> a:vim
 sethandler <C-S-P> a:vim
 sethandler <C-T> a:vim
 sethandler <C-`> a:vim
+sethandler <C-S-X> a:vim
 sethandler <D-P> a:vim
 sethandler <D-S-P> a:vim
