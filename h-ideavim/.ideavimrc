@@ -51,6 +51,9 @@ nmap <C-I> <action>(Forward)
 nnoremap <A-W> [w
 nnoremap <A-E> ]w
 nnoremap <A-B> [b
+vnoremap <A-W> [w
+vnoremap <A-E> ]w
+vnoremap <A-B> [b
 
 " access documentation for the current symbol
 nmap K <action>(QuickJavaDoc)
