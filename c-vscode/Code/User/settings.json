@@ -109,9 +109,14 @@
 
   // vim (to be moved to vimrc)
   "vim.useCtrlKeys": true,
+  "vim.handleKeys": {
+    "<C-j>": true,
+    "<C-k>": true
+  },
   "vim.ignorecase": false,
   "vim.smartcase": false,
   "vim.leader": " ",
+  "vim.camelCaseMotion.enable": true,
   "vim.normalModeKeyBindings": [
     {
       "before": ["g", "d"],
@@ -142,6 +147,10 @@
       "commands": ["editor.action.showHover"]
     },
     {
+      "before": ["<A-k>"],
+      "commands": ["editor.action.showHover"]
+    },
+    {
       "before": ["g", "c", "c"],
       "commands": ["editor.action.commentLine"]
     },
@@ -154,16 +163,34 @@
       "commands": ["editor.action.selectHighlights"]
     },
     {
-      "before": ["<C-X>"],
+      "before": ["<C-x>"],
       "commands": ["workbench.action.tasks.build"]
     },
     {
-      "before": ["<C-J>"],
+      "before": ["<C-j>"],
       "commands": ["editor.action.moveLinesDownAction"]
     },
     {
-      "before": ["<C-K>"],
+      "before": ["<C-k>"],
       "commands": ["editor.action.moveLinesUpAction"]
+    },
+    {
+      "before": ["H"],
+      "commands": ["workbench.action.previousEditor"]
+    },
+    {
+      "before": ["L"],
+      "commands": ["workbench.action.nextEditor"]
+    },
+    {
+      "before": ["<leader>", "<space>"],
+      "commands": ["problems.action.showQuickFixes"],
+      "when": "problemFocus"
+    },
+    {
+      "before": ["<leader>", "<space>"],
+      "commands": ["editor.action.quickFix"],
+      "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
     }
   ],
   "vim.visualModeKeyBindings": [
@@ -180,12 +207,30 @@
       "commands": ["editor.action.commentLine"]
     },
     {
-      "before": ["<C-J>"],
+      "before": ["<C-j>"],
       "commands": ["editor.action.moveLinesDownAction"]
     },
     {
-      "before": ["<C-K>"],
+      "before": ["<C-k>"],
       "commands": ["editor.action.moveLinesUpAction"]
+    },
+    {
+      "before": ["<C-h>"],
+      "commands": ["editor.action.moveCarretLeftAction"]
+    },
+    {
+      "before": ["<C-l>"],
+      "commands": ["editor.action.moveCarretRightAction"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [">"],
+      "after": [">", "g", "v"]
+    },
+    {
+      "before": ["<"],
+      "after": ["<", "g", "v"]
     }
   ],
 
@@ -252,5 +297,6 @@
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "latex-workshop.latex.autoBuild.run": "never"
+  "latex-workshop.latex.autoBuild.run": "never",
+  "files.autoSave": "afterDelay"
 }
