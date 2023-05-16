@@ -24,7 +24,7 @@
   "window.titleBarStyle": "custom",
   "workbench.editor.labelFormat": "short",
   // > > theme
-  "workbench.colorTheme": "One Dark Pro Darker",
+  "workbench.colorTheme": "Catppuccin Macchiato",
   "workbench.colorCustomizations": {
     "[One Dark Pro]": {
       "editorCursor.foreground": "#78909c",
