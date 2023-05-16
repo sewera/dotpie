@@ -18,6 +18,8 @@
   "editor.suggest.localityBonus": true,
   "editor.suggestSelection": "first",
   "editor.wordBasedSuggestions": true,
+  "editor.cursorSurroundingLines": 8,
+  "editor.cursorSurroundingLinesStyle": "default",
   "editor.stickyScroll.enabled": true,
 
   // > behavior and appearance
