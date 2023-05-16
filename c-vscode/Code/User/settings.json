@@ -120,7 +120,7 @@
   "vim.smartcase": false,
   "vim.leader": " ",
   "vim.camelCaseMotion.enable": true,
-  "vim.normalModeKeyBindings": [
+  "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": ["g", "d"],
       "commands": ["editor.action.revealDefinition"]
@@ -202,7 +202,10 @@
     },
     {
       "before": ["<leader>", "t", "t"],
-      "commands": ["workbench.action.maximizeEditor"]
+      "commands": [
+        "workbench.action.maximizeEditor",
+        "workbench.action.closePanel"
+      ]
     },
     {
       "before": ["<leader>", "t", "x"],
@@ -257,7 +260,7 @@
       "commands": ["editor.action.startFindReplaceAction"]
     }
   ],
-  "vim.visualModeKeyBindings": [
+  "vim.visualModeKeyBindingsNonRecursive": [
     {
       "before": ["<leader>", "m"],
       "commands": ["editor.action.addSelectionToNextFindMatch"]
@@ -293,9 +296,7 @@
     {
       "before": ["<leader>", "f", "r"],
       "commands": ["workbench.action.replaceInFiles"]
-    }
-  ],
-  "vim.visualModeKeyBindingsNonRecursive": [
+    },
     {
       "before": [">"],
       "after": [">", "g", "v"]
@@ -365,5 +366,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "latex-workshop.latex.autoBuild.run": "never",
-  "files.autoSave": "onFocusChange"
+  "files.autoSave": "onFocusChange",
+  "editor.minimap.enabled": false
 }
