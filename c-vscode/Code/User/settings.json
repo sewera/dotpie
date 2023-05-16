@@ -109,6 +109,7 @@
 
   // vim (to be moved to vimrc)
   "vim.useCtrlKeys": true,
+  "vim.useSystemClipboard": true,
   "vim.handleKeys": {
     "<C-j>": true,
     "<C-k>": true
@@ -133,6 +134,11 @@
     {
       "before": ["g", "r"],
       "commands": ["editor.action.goToReferences"]
+    },
+    {
+      "before": ["g", "e"],
+      "commands": ["editor.action.marker.next"],
+      "when": "editorFocus"
     },
     {
       "before": ["<leader>", "r"],
@@ -191,6 +197,62 @@
       "before": ["<leader>", "<space>"],
       "commands": ["editor.action.quickFix"],
       "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+      "before": ["<leader>", "t", "t"],
+      "commands": ["workbench.action.maximizeEditor"]
+    },
+    {
+      "before": ["<leader>", "t", "x"],
+      "commands": ["workbench.action.terminal.toggleTerminal"]
+    },
+    {
+      "before": ["<leader>", "t", "p"],
+      "commands": ["workbench.view.explorer"]
+    },
+    {
+      "before": ["<leader>", "t", "n", "n"],
+      "commands": ["notifications.toggleList"]
+    },
+    {
+      "before": ["<leader>", "t", "n", "c"],
+      "commands": ["notifications.clearAll"]
+    },
+    {
+      "before": ["<leader>", "t", "g"],
+      "commands": ["workbench.view.scm"]
+    },
+    {
+      "before": ["<leader>", "g", "c"],
+      "commands": ["workbench.view.scm"]
+    },
+    {
+      "before": ["<leader>", "g", "p"],
+      "commands": ["git.push"]
+    },
+    {
+      "before": ["<leader>", "g", "u"],
+      "commands": ["git.pull"]
+    },
+    {
+      "before": ["<leader>", "g", "b"],
+      "commands": ["git.checkout"]
+    },
+    {
+      "before": ["<leader>", "f", "f"],
+      "commands": ["workbench.action.findInFiles"]
+    },
+    {
+      "before": ["<leader>", "f", "r"],
+      "commands": ["workbench.action.replaceInFiles"]
+    },
+    {
+      "before": ["/"],
+      "commands": ["actions.find"]
+    },
+    {
+      "before": ["?"],
+      "commands": ["editor.action.startFindReplaceAction"]
     }
   ],
   "vim.visualModeKeyBindings": [
@@ -221,6 +283,14 @@
     {
       "before": ["<C-l>"],
       "commands": ["editor.action.moveCarretRightAction"]
+    },
+    {
+      "before": ["<leader>", "f", "f"],
+      "commands": ["workbench.action.findInFiles"]
+    },
+    {
+      "before": ["<leader>", "f", "r"],
+      "commands": ["workbench.action.replaceInFiles"]
     }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
@@ -264,8 +334,6 @@
   // > > linting
   "eslint.options": {},
   "eslint.codeActionsOnSave.mode": "all",
-  // > > testing
-  "jest.jestCommandLine": "yarn test",
 
   // > python
   "python.languageServer": "Pylance",
@@ -277,11 +345,8 @@
   "go.toolsManagement.autoUpdate": true,
 
   // > markdown
-  "rewrap.autoWrap.notification": "text",
   "[markdown]": {
     "editor.occurrencesHighlight": false,
-    "rewrap.autoWrap.enabled": true,
-    "rewrap.wrappingColumn": 80,
     "editor.wordWrap": "on",
     "editor.quickSuggestions": {
       "other": true,
@@ -298,5 +363,5 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "latex-workshop.latex.autoBuild.run": "never",
-  "files.autoSave": "afterDelay"
+  "files.autoSave": "onFocusChange"
 }

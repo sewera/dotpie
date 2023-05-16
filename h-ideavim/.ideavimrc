@@ -107,7 +107,7 @@ nmap <C-S-X> <action>(Debug)
 
 nmap <leader>tx <action>(ActivateTerminalToolWindow)
 nmap <leader>tc <action>(ActivateCommitToolWindow)
-nmap <leader>tp <action>(ActivateProjectToolWindow)
+nmap <leader>tp <action>(SelectInProjectView)
 nmap <leader>tb <action>(ActivateBuildToolWindow)
 nmap <leader>tr <action>(ActivateRunToolWindow)
 nmap <leader>ts <action>(ActivateServicesToolWindow)
