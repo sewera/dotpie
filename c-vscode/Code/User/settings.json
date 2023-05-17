@@ -335,7 +335,7 @@
   // > python
   "python.languageServer": "Pylance",
   "python.formatting.provider": "black",
-  "python.defaultInterpreterPath": "python3"
+  "python.defaultInterpreterPath": "python3",
 
   // > go
   "go.toolsManagement.autoUpdate": true,
