@@ -258,6 +258,14 @@
     {
       "before": ["?"],
       "commands": ["editor.action.startFindReplaceAction"]
+    },
+    {
+      "before": ["n"],
+      "commands": ["editor.action.nextMatchFindAction"]
+    },
+    {
+      "before": ["N"],
+      "commands": ["editor.action.previousMatchFindAction"]
     }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
@@ -296,6 +304,22 @@
     {
       "before": ["<leader>", "f", "r"],
       "commands": ["workbench.action.replaceInFiles"]
+    },
+    {
+      "before": ["/"],
+      "commands": ["actions.find"]
+    },
+    {
+      "before": ["?"],
+      "commands": ["editor.action.startFindReplaceAction"]
+    },
+    {
+      "before": ["n"],
+      "commands": ["editor.action.nextMatchFindAction"]
+    },
+    {
+      "before": ["N"],
+      "commands": ["editor.action.previousMatchFindAction"]
     },
     {
       "before": [">"],
