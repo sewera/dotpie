@@ -23,6 +23,8 @@
   "editor.stickyScroll.enabled": true,
 
   // > behavior and appearance
+  "files.autoSave": "onFocusChange",
+  "editor.minimap.enabled": false,
   "window.titleBarStyle": "custom",
   "workbench.editor.labelFormat": "short",
   // > > theme
@@ -42,6 +44,7 @@
     }
   },
   // > > text, lines, and columns
+  "files.eol": "\n",
   "editor.tabSize": 2,
   "editor.wordWrap": "off",
   "editor.rulers": [80, 120, 150],
@@ -55,38 +58,13 @@
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
   // > > handling files
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   // > > terminal
   "terminal.integrated.tabs.enabled": true,
-  // > > extensions
-  // > > > Installed extensions:
-  // bradlc.vscode-tailwindcss
-  // dbaeumer.vscode-eslint
-  // donjayamanne.createuniqueid
-  // eamodio.gitlens
-  // EditorConfig.EditorConfig
-  // esbenp.prettier-vscode
-  // GitHub.remotehub
-  // GitHub.vscode-pull-request-github
-  // golang.go
-  // ms-python.python
-  // ms-python.vscode-pylance
-  // ms-vscode.remote-repositories
-  // ms-vscode.sublime-keybindings
-  // ms-vscode.test-adapter-converter
-  // msjsdiag.vscode-react-native
-  // Orta.vscode-jest
-  // PKief.material-icon-theme
-  // rust-lang.rust
-  // silvenon.mdx
-  // stkb.rewrap
-  // vscodevim.vim
-  // yzhang.markdown-all-in-one
-  // zhuangtongfa.material-theme
-  "extensions.ignoreRecommendations": true,
 
   // misc
   "telemetry.telemetryLevel": "off",
@@ -337,36 +315,27 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
   // > > formatting
-  "[javascript]": {
+  "[javascript][javascriptreact][typescript][typescriptreact][json][jsonc][html][vue][handlebars][css][scss][less][markdown][mdx][astro][graphql][yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+  // > > > default Prettier config
+  "prettier.printWidth": 120,
+  "prettier.tabWidth": 2,
+  "prettier.useTabs": false,
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "prettier.jsxSingleQuote": false,
+  "prettier.trailingComma": "all",
+  "prettier.bracketSpacing": true,
+  "prettier.arrowParens": "avoid",
+  "prettier.endOfLine": "lf",
   // > > linting
-  "eslint.options": {},
   "eslint.codeActionsOnSave.mode": "all",
 
   // > python
   "python.languageServer": "Pylance",
   "python.formatting.provider": "black",
-  "python.defaultInterpreterPath": "python3",
-  "python.pythonPath": "/usr/local/bin/python3",
+  "python.defaultInterpreterPath": "python3"
 
   // > go
   "go.toolsManagement.autoUpdate": true,
@@ -374,22 +343,16 @@
   // > markdown
   "[markdown]": {
     "editor.occurrencesHighlight": false,
-    "editor.wordWrap": "on",
     "editor.quickSuggestions": {
       "other": true,
       "comments": false,
       "strings": true
-    },
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
   },
-  "cSpell.userWords": ["Blazej", "fizzbuzz", "kata", "notipie", "Sewera"],
-  "[astro]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+  
+  // > LaTeX
   "latex-workshop.latex.autoBuild.run": "never",
-  "files.autoSave": "onFocusChange",
-  "editor.minimap.enabled": false
+  
+  // > spelling
+  "cSpell.userWords": ["Blazej", "fizzbuzz", "kata", "notipie", "Sewera"]
 }
