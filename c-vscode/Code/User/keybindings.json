@@ -1,4 +1,3 @@
-// Place your key bindings in this file to override the defaultsauto[]
 [
   {
     "key": "alt+enter",
@@ -79,8 +78,13 @@
     "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
   },
   {
+    "key": "enter",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "findInputFocussed"
+  },
+  {
     "key": "escape",
     "command": "workbench.action.focusActiveEditorGroup",
-    "when": "!editorTextFocus"
+    "when": "!editorTextFocus && !findInputFocussed && !replaceInputFocussed"
   }
 ]
