@@ -88,8 +88,8 @@ imap <C-N> <action>(HippieCompletion)
 imap <C-P> <action>(HippieBackwardCompletion)
 
 " IntelliJ window tools and navigation
-nmap L :tabnext<CR>
-nmap H :tabprev<CR>
+nmap L <action>(NextTab)
+nmap H <action>(PreviousTab)
 
 " <C- Control
 nmap <C-P> <action>(GotoFile)
