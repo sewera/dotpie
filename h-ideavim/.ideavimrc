@@ -132,15 +132,6 @@ nmap <leader>gu <action>(Vcs.UpdateProject)
 nmap <leader>gb <action>(Git.Branches)
 
 " Find and replace
-nmap / <action>(Find)
-vmap / <action>(Find)
-nmap ? <action>(Replace)
-vmap ? <action>(Replace)
-nmap n <action>(FindNext)
-vmap n <action>(FindNext)
-nmap N <action>(FindPrevious)
-vmap N <action>(FindPrevious)
-
 nmap <leader>ff <action>(FindInPath)
 vmap <leader>ff <action>(FindInPath)
 nmap <leader>fr <action>(ReplaceInPath)
