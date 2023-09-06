@@ -41,13 +41,13 @@ SAVEHIST=1000
 unsetopt beep
 bindkey -v
 
-if type exa &> /dev/null; then
-  alias ls='exa'
-  alias l.='exa -a'
-  alias l='exa -a'
-  alias ll='exa -la --git'
-  alias tree='exa --tree --level=5'
-  alias tree.='exa -a --tree --level=8 --git-ignore'
+if type eza &> /dev/null; then
+  alias ls='eza'
+  alias l.='eza -a'
+  alias l='eza -a'
+  alias ll='eza -la --git'
+  alias tree='eza --tree --level=5'
+  alias tree.='eza -a --tree --level=8 --git-ignore'
 fi
 
 alias grep='grep --color=auto'
