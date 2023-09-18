@@ -137,6 +137,9 @@ vmap <leader>ff <action>(FindInPath)
 nmap <leader>fr <action>(ReplaceInPath)
 vmap <leader>fr <action>(ReplaceInPath)
 
+" Enable IntelliJ search in insert mode (useful in test and build outputs)
+imap <C-f> <action>(Find)
+
 " set ideavim to handle all keyboard shortcuts
 sethandler <C-2> a:vim
 sethandler <C-S-2> a:vim
