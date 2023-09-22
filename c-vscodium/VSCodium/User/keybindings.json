@@ -24,7 +24,15 @@
     "command": "-workbench.action.showAllSymbols"
   },
   {
+    "key": "cmd+t",
+    "command": "-workbench.action.showAllSymbols"
+  },
+  {
     "key": "ctrl+t",
+    "command": "foam-vscode.create-note-from-template"
+  },
+  {
+    "key": "cmd+t",
     "command": "foam-vscode.create-note-from-template"
   },
   {

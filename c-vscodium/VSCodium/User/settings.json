@@ -77,16 +77,6 @@
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
 
-  // > gitlens
-  "gitlens.currentLine.enabled": false,
-  "gitlens.hovers.currentLine.over": "line",
-  "gitlens.codeLens.enabled": false,
-  "gitlens.hovers.enabled": false,
-  "gitlens.defaultDateLocale": null,
-  "gitlens.defaultDateShortFormat": "YYYY-MM-DD",
-  "gitlens.defaultDateFormat": "YYYY-MM-DDThh:mm:ss",
-  "gitlens.defaultTimeFormat": "hh:mm:ss",
-
   // vim (to be moved to vimrc)
   "vim.useCtrlKeys": true,
   "vim.useSystemClipboard": true,
@@ -180,10 +170,7 @@
     },
     {
       "before": ["<leader>", "t", "t"],
-      "commands": [
-        "workbench.action.maximizeEditor",
-        "workbench.action.closePanel"
-      ]
+      "commands": ["workbench.action.maximizeEditor", "workbench.action.closePanel"]
     },
     {
       "before": ["<leader>", "t", "x"],
@@ -300,11 +287,6 @@
   // > > linting
   "eslint.codeActionsOnSave.mode": "all",
 
-  // > python
-  "python.languageServer": "Pylance",
-  "python.formatting.provider": "black",
-  "python.defaultInterpreterPath": "python3",
-
   // > go
   "go.toolsManagement.autoUpdate": true,
 
@@ -317,10 +299,10 @@
       "strings": true
     }
   },
-  
+
   // > LaTeX
   "latex-workshop.latex.autoBuild.run": "never",
-  
+
   // > spelling
   "cSpell.userWords": ["Blazej", "fizzbuzz", "kata", "notipie", "Sewera"]
 }
