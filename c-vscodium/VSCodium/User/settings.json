@@ -26,6 +26,7 @@
   "files.autoSave": "onFocusChange",
   "editor.minimap.enabled": false,
   "window.titleBarStyle": "custom",
+  "window.commandCenter": false,
   "workbench.editor.labelFormat": "short",
   // > > theme
   "workbench.colorTheme": "Catppuccin Macchiato",
