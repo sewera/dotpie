@@ -17,7 +17,7 @@
   "editor.tabCompletion": "on",
   "editor.suggest.localityBonus": true,
   "editor.suggestSelection": "first",
-  "editor.wordBasedSuggestions": true,
+  "editor.wordBasedSuggestions": "matchingDocuments",
   "editor.cursorSurroundingLines": 8,
   "editor.cursorSurroundingLinesStyle": "default",
   "editor.stickyScroll.enabled": true,
@@ -293,7 +293,7 @@
 
   // > markdown
   "[markdown]": {
-    "editor.occurrencesHighlight": false,
+    "editor.occurrencesHighlight": "off",
     "editor.quickSuggestions": {
       "other": true,
       "comments": false,
