@@ -305,5 +305,9 @@
   "latex-workshop.latex.autoBuild.run": "never",
 
   // > spelling
-  "cSpell.userWords": ["Blazej", "fizzbuzz", "kata", "notipie", "Sewera"]
+  "cSpell.userWords": ["Blazej", "fizzbuzz", "kata", "notipie", "Sewera"],
+  "markyMarkdown.statsShowReadingTime": false,
+  "markyMarkdown.statsShowWords": true,
+  "markyMarkdown.statsShowLines": false,
+  "markyMarkdown.statsShowCharacters": false
 }
