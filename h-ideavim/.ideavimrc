@@ -26,7 +26,7 @@ set ideavimsupport=''
 set ideajoin
 
 " use system clipboard
-set clipboard=unnamedplus,unnamed,ideaput
+set clipboard=unnamedplus,ideaput
 " clipboard history menu
 nmap <leader>p <action>(PasteMultiple)
 
@@ -35,10 +35,10 @@ vnoremap < <gv
 vnoremap > >gv
 
 " code navigation
-nmap gd <action>(GotoDeclaration)
+nmap gd <action>(GotoImplementation)
 nmap gr <action>(GotoDeclaration)
 nmap gt <action>(GotoTest)
-nmap gi <action>(GotoImplementation)
+nmap gT <action>(GotoTypeDeclaration)
 nmap ge <action>(GotoNextError)
 
 nmap [[ <action>(MethodUp)
@@ -115,6 +115,7 @@ nmap <leader>tg <action>(ActivateVersionControlToolWindow)
 nmap <leader>te <action>(ActivateProblemsViewToolWindow)
 nmap <leader>td <action>(ActivateTODOToolWindow)
 nmap <leader>tk <action>(tasks.goto)
+nmap <leader>tf <action>(Scratch.ShowFilesPopup)
 " manage notifications
 nmap <leader>tnn <action>(ActivateNotificationsToolWindow)
 nmap <leader>tnc <action>(ClearAllNotifications)
@@ -136,9 +137,12 @@ nmap <leader>ff <action>(FindInPath)
 vmap <leader>ff <action>(FindInPath)
 nmap <leader>fr <action>(ReplaceInPath)
 vmap <leader>fr <action>(ReplaceInPath)
-
-" Enable IntelliJ search in insert mode (useful in test and build outputs)
 imap <C-f> <action>(Find)
+
+" Build
+nmap <leader>bb <action>(CompileDirty)
+nmap <leader>bf <action>(CompileFile)
+nmap <leader>bm <action>(MakeModule)
 
 " set ideavim to handle all keyboard shortcuts
 sethandler <C-2> a:vim
