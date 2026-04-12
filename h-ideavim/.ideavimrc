@@ -16,7 +16,7 @@ set wrapscan
 " don't play sound on error
 set visualbell
 " display current line number and relative line numbers above and below
-set number relativenumber
+set number
 " don't change the mode when refactoring
 set idearefactormode=keep
 set lookupkeys=<Up>,<Down>,<Left>,<Right>,<C-N>,<C-P>,<Tab>
@@ -59,6 +59,12 @@ vnoremap <A-B> [b
 nmap K <action>(QuickJavaDoc)
 nmap <A-K> <action>(ShowErrorDescription)
 
+" tree-based code selection
+nmap <A-K> <action>(EditorSelectWord)
+nmap <A-J> <action>(EditorUnSelectWord)
+vmap <A-K> <action>(EditorSelectWord)
+vmap <A-J> <action>(EditorUnSelectWord)
+
 " code refactoring and manipulation
 nmap <leader>R <action>(RenameElement)
 nmap <leader>r <action>(Refactorings.QuickListPopupAction)
@@ -94,9 +100,15 @@ nmap H <action>(PreviousTab)
 " <C- Control
 nmap <C-P> <action>(GotoFile)
 nmap <C-S-P> <action>(GotoAction)
+imap <C-S-P> <action>(GotoAction)
+vmap <C-S-P> <action>(GotoAction)
 " <D- Command (Mac)
 nmap <D-P> <action>(GotoFile)
 nmap <D-S-P> <action>(GotoAction)
+imap <D-S-P> <action>(GotoAction)
+vmap <D-S-P> <action>(GotoAction)
+
+nmap <A-P> <action>(RecentFiles)
 
 " run last target
 nmap <C-X> <action>(Run)
@@ -181,4 +193,15 @@ sethandler <C-T> a:vim
 sethandler <C-`> a:vim
 sethandler <C-S-X> a:vim
 sethandler <D-P> a:vim
+sethandler <D-S-P> a:vim
+sethandler <S-CR> a:vim
+sethandler <S-Left> a:vim
+sethandler <C-Left> a:vim
+sethandler <S-Up> a:vim
+sethandler <S-Right> a:vim
+sethandler <C-Right> a:vim
+sethandler <S-Down> a:vim
+sethandler <A-K> a:vim
+sethandler <A-J> a:vim
+sethandler <C-S-P> a:vim
 sethandler <D-S-P> a:vim
