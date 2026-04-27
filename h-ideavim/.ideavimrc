@@ -21,7 +21,7 @@ set number
 set idearefactormode=keep
 set lookupkeys=<Up>,<Down>,<Left>,<Right>,<C-N>,<C-P>,<Tab>
 " don't use vim in dialog boxes
-set ideavimsupport=''
+set ideavimsupport=dialog
 " use smart join
 set ideajoin
 
@@ -56,8 +56,7 @@ vnoremap <A-E> ]w
 vnoremap <A-B> [b
 
 " access documentation for the current symbol
-nmap K <action>(QuickJavaDoc)
-nmap <A-K> <action>(ShowErrorDescription)
+nmap K <action>(ShowHoverInfo)
 
 " tree-based code selection
 nmap <A-K> <action>(EditorSelectWord)
