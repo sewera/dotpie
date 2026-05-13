@@ -155,6 +155,9 @@ nmap <leader>bb <action>(CompileDirty)
 nmap <leader>bf <action>(CompileFile)
 nmap <leader>bm <action>(MakeModule)
 
+" Cursive REPL
+nmap <A-X> <action>(:cursive.repl.actions/run-top-sexp)
+
 " set ideavim to handle all keyboard shortcuts
 sethandler <C-2> a:vim
 sethandler <C-S-2> a:vim

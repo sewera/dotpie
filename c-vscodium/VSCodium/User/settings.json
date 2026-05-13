@@ -8,7 +8,7 @@
   "editor.quickSuggestions": {
     "other": true,
     "comments": true,
-    "strings": true
+    "strings": true,
   },
   "editor.acceptSuggestionOnCommitCharacter": true,
   "editor.acceptSuggestionOnEnter": "off",
@@ -35,14 +35,14 @@
       "editorCursor.foreground": "#78909c",
       "editorCursor.background": "#192228",
       "terminalCursor.foreground": "#78909c",
-      "terminalCursor.background": "#192228"
+      "terminalCursor.background": "#192228",
     },
     "[Atom One Light]": {
       "editorCursor.foreground": "#d1d1d1",
       "editorCursor.background": "#42789c",
       "terminalCursor.foreground": "#d1d1d1",
-      "terminalCursor.background": "#42789c"
-    }
+      "terminalCursor.background": "#42789c",
+    },
   },
   // > > text, lines, and columns
   "files.eol": "\n",
@@ -84,7 +84,7 @@
   "vim.useSystemClipboard": true,
   "vim.handleKeys": {
     "<C-j>": true,
-    "<C-k>": true
+    "<C-k>": true,
   },
   "vim.ignorecase": false,
   "vim.smartcase": false,
@@ -93,177 +93,177 @@
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": ["g", "d"],
-      "commands": ["editor.action.revealDefinition"]
+      "commands": ["editor.action.revealDefinition"],
     },
     {
       "before": ["g", "i"],
-      "commands": ["editor.action.goToImplementation"]
+      "commands": ["editor.action.goToImplementation"],
     },
     {
       "before": ["g", "t"],
-      "commands": ["editor.action.goToReferences"]
+      "commands": ["editor.action.goToReferences"],
     },
     {
       "before": ["g", "r"],
-      "commands": ["editor.action.goToReferences"]
+      "commands": ["editor.action.goToReferences"],
     },
     {
       "before": ["g", "e"],
       "commands": ["editor.action.marker.next"],
-      "when": "editorFocus"
+      "when": "editorFocus",
     },
     {
       "before": ["<leader>", "r"],
-      "commands": ["editor.action.refactor"]
+      "commands": ["editor.action.refactor"],
     },
     {
       "before": ["<leader>", "R"],
-      "commands": ["editor.action.rename"]
+      "commands": ["editor.action.rename"],
     },
     {
       "before": ["K"],
-      "commands": ["editor.action.showHover"]
+      "commands": ["editor.action.showHover"],
     },
     {
       "before": ["<A-k>"],
-      "commands": ["editor.action.showHover"]
+      "commands": ["editor.action.showHover"],
     },
     {
       "before": ["g", "c", "c"],
-      "commands": ["editor.action.commentLine"]
+      "commands": ["editor.action.commentLine"],
     },
     {
       "before": ["<leader>", "m"],
-      "commands": ["editor.action.addSelectionToNextFindMatch"]
+      "commands": ["editor.action.addSelectionToNextFindMatch"],
     },
     {
       "before": ["<leader>", "M"],
-      "commands": ["editor.action.selectHighlights"]
+      "commands": ["editor.action.selectHighlights"],
     },
     {
       "before": ["<C-x>"],
-      "commands": ["workbench.action.tasks.build"]
+      "commands": ["workbench.action.tasks.build"],
     },
     {
       "before": ["<C-j>"],
-      "commands": ["editor.action.moveLinesDownAction"]
+      "commands": ["editor.action.moveLinesDownAction"],
     },
     {
       "before": ["<C-k>"],
-      "commands": ["editor.action.moveLinesUpAction"]
+      "commands": ["editor.action.moveLinesUpAction"],
     },
     {
       "before": ["H"],
-      "commands": ["workbench.action.previousEditor"]
+      "commands": ["workbench.action.previousEditor"],
     },
     {
       "before": ["L"],
-      "commands": ["workbench.action.nextEditor"]
+      "commands": ["workbench.action.nextEditor"],
     },
     {
       "before": ["<leader>", "<space>"],
       "commands": ["problems.action.showQuickFixes"],
-      "when": "problemFocus"
+      "when": "problemFocus",
     },
     {
       "before": ["<leader>", "<space>"],
       "commands": ["editor.action.quickFix"],
-      "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+      "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly",
     },
     {
       "before": ["<leader>", "t", "t"],
-      "commands": ["workbench.action.maximizeEditor", "workbench.action.closePanel"]
+      "commands": ["workbench.action.maximizeEditor", "workbench.action.closePanel"],
     },
     {
       "before": ["<leader>", "t", "x"],
-      "commands": ["workbench.action.terminal.toggleTerminal"]
+      "commands": ["workbench.action.terminal.toggleTerminal"],
     },
     {
       "before": ["<leader>", "t", "p"],
-      "commands": ["workbench.view.explorer"]
+      "commands": ["workbench.view.explorer"],
     },
     {
       "before": ["<leader>", "t", "n", "n"],
-      "commands": ["notifications.toggleList"]
+      "commands": ["notifications.toggleList"],
     },
     {
       "before": ["<leader>", "t", "n", "c"],
-      "commands": ["notifications.clearAll"]
+      "commands": ["notifications.clearAll"],
     },
     {
       "before": ["<leader>", "t", "g"],
-      "commands": ["workbench.view.scm"]
+      "commands": ["workbench.view.scm"],
     },
     {
       "before": ["<leader>", "g", "c"],
-      "commands": ["workbench.view.scm"]
+      "commands": ["workbench.view.scm"],
     },
     {
       "before": ["<leader>", "g", "p"],
-      "commands": ["git.push"]
+      "commands": ["git.push"],
     },
     {
       "before": ["<leader>", "g", "u"],
-      "commands": ["git.pull"]
+      "commands": ["git.pull"],
     },
     {
       "before": ["<leader>", "g", "b"],
-      "commands": ["git.checkout"]
+      "commands": ["git.checkout"],
     },
     {
       "before": ["<leader>", "f", "f"],
-      "commands": ["workbench.action.findInFiles"]
+      "commands": ["workbench.action.findInFiles"],
     },
     {
       "before": ["<leader>", "f", "r"],
-      "commands": ["workbench.action.replaceInFiles"]
-    }
+      "commands": ["workbench.action.replaceInFiles"],
+    },
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
     {
       "before": ["<leader>", "m"],
-      "commands": ["editor.action.addSelectionToNextFindMatch"]
+      "commands": ["editor.action.addSelectionToNextFindMatch"],
     },
     {
       "before": ["<leader>", "M"],
-      "commands": ["editor.action.selectHighlights"]
+      "commands": ["editor.action.selectHighlights"],
     },
     {
       "before": ["g", "c"],
-      "commands": ["editor.action.commentLine"]
+      "commands": ["editor.action.commentLine"],
     },
     {
       "before": ["<C-j>"],
-      "commands": ["editor.action.moveLinesDownAction"]
+      "commands": ["editor.action.moveLinesDownAction"],
     },
     {
       "before": ["<C-k>"],
-      "commands": ["editor.action.moveLinesUpAction"]
+      "commands": ["editor.action.moveLinesUpAction"],
     },
     {
       "before": ["<C-h>"],
-      "commands": ["editor.action.moveCarretLeftAction"]
+      "commands": ["editor.action.moveCarretLeftAction"],
     },
     {
       "before": ["<C-l>"],
-      "commands": ["editor.action.moveCarretRightAction"]
+      "commands": ["editor.action.moveCarretRightAction"],
     },
     {
       "before": ["<leader>", "f", "f"],
-      "commands": ["workbench.action.findInFiles"]
+      "commands": ["workbench.action.findInFiles"],
     },
     {
       "before": ["<leader>", "f", "r"],
-      "commands": ["workbench.action.replaceInFiles"]
+      "commands": ["workbench.action.replaceInFiles"],
     },
     {
       "before": [">"],
-      "after": [">", "g", "v"]
+      "after": [">", "g", "v"],
     },
     {
       "before": ["<"],
-      "after": ["<", "g", "v"]
-    }
+      "after": ["<", "g", "v"],
+    },
   ],
 
   // language-specific
@@ -273,7 +273,7 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
   // > > formatting
   "[javascript][javascriptreact][typescript][typescriptreact][json][jsonc][html][vue][handlebars][css][scss][less][markdown][mdx][astro][graphql][yaml]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   // > > > default Prettier config
   "prettier.printWidth": 120,
@@ -298,8 +298,8 @@
     "editor.quickSuggestions": {
       "other": true,
       "comments": false,
-      "strings": true
-    }
+      "strings": true,
+    },
   },
 
   // > LaTeX
@@ -310,5 +310,6 @@
   "markyMarkdown.statsShowReadingTime": false,
   "markyMarkdown.statsShowWords": true,
   "markyMarkdown.statsShowLines": false,
-  "markyMarkdown.statsShowCharacters": false
+  "markyMarkdown.statsShowCharacters": false,
+  "terminal.integrated.initialHint": false,
 }
