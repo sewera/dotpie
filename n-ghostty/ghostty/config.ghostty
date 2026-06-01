@@ -3,3 +3,4 @@ quit-after-last-window-closed = true
 auto-update = off
 font-family = SauceCodePro Nerd Font
 font-size = 14
+shell-integration-features = sudo
